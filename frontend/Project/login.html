@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>学生成绩管理系统 - 登录</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', 'Poppins', 'Roboto', system-ui, -apple-system, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        /* 装饰性背景圆 */
+        body::before {
+            content: '';
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 50%;
+            top: -150px;
+            left: -150px;
+            z-index: 0;
+        }
+        body::after {
+            content: '';
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 50%;
+            bottom: -200px;
+            right: -200px;
+            z-index: 0;
+        }
+
+        .login-container {
+            width: 100%;
+            max-width: 460px;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(2px);
+            border-radius: 32px;
+            box-shadow: 0 25px 45px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(255,255,255,0.3);
+            overflow: hidden;
+            padding: 40px 32px 48px;
+            transition: transform 0.3s ease;
+            z-index: 2;
+        }
+
+        .login-container:hover {
+            transform: translateY(-5px);
+        }
+
+        .logo-area {
+            text-align: center;
+            margin-bottom: 32px;
+        }
+        .logo-area h1 {
+            font-size: 28px;
+            font-weight: 700;
+            background: linear-gradient(135deg, #4f46e5, #7c3aed);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            letter-spacing: -0.3px;
+        }
+        .logo-area p {
+            color: #6b7280;
+            font-size: 14px;
+            margin-top: 8px;
+        }
+
+        .input-group {
+            margin-bottom: 24px;
+        }
+        .input-group label {
+            display: block;
+            font-size: 14px;
+            font-weight: 500;
+            color: #374151;
+            margin-bottom: 8px;
+        }
+        .input-group input {
+            width: 100%;
+            padding: 14px 18px;
+            font-size: 15px;
+            border: 1.5px solid #e2e8f0;
+            border-radius: 20px;
+            background: #f9fafb;
+            transition: all 0.2s;
+            outline: none;
+        }
+        .input-group input:focus {
+            border-color: #4f46e5;
+            background: #ffffff;
+            box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.2);
+        }
+
+        .login-btn {
+            width: 100%;
+            background: linear-gradient(105deg, #4f46e5, #7c3aed);
+            border: none;
+            padding: 14px;
+            border-radius: 40px;
+            font-weight: 600;
+            font-size: 16px;
+            color: white;
+            cursor: pointer;
+            transition: all 0.25s;
+            margin-top: 8px;
+            box-shadow: 0 8px 14px -6px rgba(79, 70, 229, 0.4);
+        }
+        .login-btn:hover {
+            transform: scale(0.98);
+            background: linear-gradient(105deg, #4338ca, #6d28d9);
+            box-shadow: 0 4px 10px -4px rgba(79, 70, 229, 0.5);
+        }
+
+        .demo-info {
+            margin-top: 28px;
+            background: #f3f4f6;
+            border-radius: 20px;
+            padding: 14px 20px;
+            font-size: 13px;
+            color: #1f2937;
+            border-left: 4px solid #4f46e5;
+        }
+        .demo-info p {
+            margin: 6px 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .demo-info code {
+            background: #e5e7eb;
+            padding: 4px 10px;
+            border-radius: 40px;
+            font-family: monospace;
+            font-size: 12px;
+            font-weight: 500;
+        }
+        .error-message {
+            background: #fee2e2;
+            color: #b91c1c;
+            border-radius: 40px;
+            padding: 12px 16px;
+            font-size: 13px;
+            margin-bottom: 20px;
+            text-align: center;
+            border-left: 3px solid #ef4444;
+            display: none;
+        }
+        .error-message.show {
+            display: block;
+        }
+        footer {
+            text-align: center;
+            margin-top: 32px;
+            font-size: 12px;
+            color: #9ca3af;
+        }
+    </style>
+</head>
+<body>
+<div class="login-container">
+    <div class="logo-area">
+        <h1>📚 成绩管理系统</h1>
+        <p>学生 | 教师 统一登录入口</p>
+    </div>
+
+    <div id="errorMsg" class="error-message"></div>
+
+    <form id="loginForm" action="javascript:void(0);">
+        <div class="input-group">
+            <label>👤 账号 / 学号</label>
+            <input type="text" id="username" placeholder="请输入学号或工号" autocomplete="off" required>
+        </div>
+        <div class="input-group">
+            <label>🔒 密码</label>
+            <input type="password" id="password" placeholder="请输入密码" required>
+        </div>
+        <button type="submit" class="login-btn">登 录 系 统 →</button>
+    </form>
+
+    <div class="demo-info">
+        <p>📌 测试账号 (任选其一) :</p>
+        <p>🔹 学生：<code>202411001</code> 密码 <code>123456</code></p>
+        <p>🔹 教师：<code>teacher</code> 密码 <code>123456</code></p>
+        <p>✨ 登录后将展示完整成绩列表及分析</p>
+    </div>
+    <footer>学生成绩管理系统 © 2025</footer>
+</div>
+
+<script>
+    // 预设用户数据 (学号/工号 -> 显示名称)
+    const USERS = {
+        '202411001': { password: '123456', role: 'student', displayName: '张思源同学' },
+        'teacher': { password: '123456', role: 'teacher', displayName: '李华老师' }
+    };
+
+    const loginForm = document.getElementById('loginForm');
+    const errorDiv = document.getElementById('errorMsg');
+    const usernameInput = document.getElementById('username');
+    const passwordInput = document.getElementById('password');
+
+    // 已登录则自动跳转成绩页
+    if (localStorage.getItem('loggedIn') === 'true' && localStorage.getItem('username')) {
+        window.location.href = 'grades.html';
+    }
+
+    function showError(msg) {
+        errorDiv.textContent = msg;
+        errorDiv.classList.add('show');
+        setTimeout(() => {
+            errorDiv.classList.remove('show');
+        }, 2800);
+    }
+
+    loginForm.addEventListener('submit', function(e) {
+        const username = usernameInput.value.trim();
+        const password = passwordInput.value.trim();
+
+        if (!username || !password) {
+            showError('❌ 请填写完整账号和密码');
+            return;
+        }
+
+        const user = USERS[username];
+        if (!user || user.password !== password) {
+            showError('⚠️ 账号或密码错误，请重试');
+            return;
+        }
+
+        // 登录成功 存储信息
+        localStorage.setItem('loggedIn', 'true');
+        localStorage.setItem('username', username);
+        localStorage.setItem('displayName', user.displayName);
+        localStorage.setItem('userRole', user.role);
+
+        // 跳转到成绩列表页
+        window.location.href = 'grades.html';
+    });
+</script>
+</body>
+</html>
