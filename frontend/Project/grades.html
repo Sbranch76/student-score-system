@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的成绩 - 学生成绩管理系统</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', 'Roboto', system-ui, sans-serif;
+        }
+
+        body {
+            background: #f0f2f5;
+            padding: 30px 24px;
+        }
+
+        /* 整体容器 */
+        .app-container {
+            max-width: 1300px;
+            margin: 0 auto;
+        }
+
+        /* 头部导航 */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: white;
+            padding: 16px 28px;
+            border-radius: 28px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+            margin-bottom: 28px;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+        .logo-area h2 {
+            font-size: 1.6rem;
+            background: linear-gradient(135deg, #4f46e5, #7c3aed);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+        .user-info {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            background: #f8fafc;
+            padding: 6px 18px;
+            border-radius: 60px;
+        }
+        .user-info span {
+            font-weight: 500;
+            color: #1e293b;
+        }
+        .logout-btn {
+            background: #ef4444;
+            border: none;
+            padding: 8px 20px;
+            border-radius: 40px;
+            color: white;
+            font-weight: 500;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+        .logout-btn:hover {
+            background: #dc2626;
+            transform: scale(0.96);
+        }
+
+        /* 卡片样式 */
+        .stats-card {
+            background: white;
+            border-radius: 28px;
+            padding: 20px 28px;
+            margin-bottom: 28px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.02);
+            border: 1px solid #eef2ff;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        .stat-item {
+            flex: 1;
+            min-width: 140px;
+            text-align: center;
+            background: #f9fafb;
+            border-radius: 24px;
+            padding: 16px 8px;
+        }
+        .stat-label {
+            font-size: 14px;
+            color: #6c757d;
+            letter-spacing: 0.5px;
+        }
+        .stat-value {
+            font-size: 32px;
+            font-weight: 800;
+            color: #1e293b;
+            margin-top: 8px;
+        }
+        .gpa-value {
+            color: #8b5cf6;
+        }
+
+        /* 表格区域 */
+        .table-wrapper {
+            background: white;
+            border-radius: 28px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+            overflow-x: auto;
+            padding: 4px 0;
+        }
+        .grade-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 15px;
+            min-width: 600px;
+        }
+        .grade-table th {
+            background: #f8fafd;
+            padding: 18px 16px;
+            text-align: left;
+            font-weight: 600;
+            color: #334155;
+            border-bottom: 1.5px solid #e2e8f0;
+        }
+        .grade-table td {
+            padding: 16px;
+            border-bottom: 1px solid #edf2f7;
+            color: #1e293b;
+        }
+        .grade-table tr:hover {
+            background: #fefce8;
+        }
+        .credit {
+            font-weight: 500;
+            color: #0f3b2c;
+        }
+        .grade-point {
+            font-weight: 700;
+            color: #4f46e5;
+        }
+        .rank-badge {
+            background: #e6f0ff;
+            padding: 4px 12px;
+            border-radius: 40px;
+            font-size: 13px;
+            font-weight: 500;
+            display: inline-block;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 36px;
+            color: #94a3b8;
+            font-size: 13px;
+        }
+
+        @media (max-width: 640px) {
+            body { padding: 16px; }
+            .stat-value { font-size: 24px; }
+        }
+    </style>
+</head>
+<body>
+<div class="app-container">
+    <div class="header">
+        <div class="logo-area">
+            <h2>📊 学业成绩中心</h2>
+        </div>
+        <div class="user-info">
+            <span>👋 欢迎，<strong id="displayName">同学</strong></span>
+            <button class="logout-btn" id="logoutBtn">退出登录</button>
+        </div>
+    </div>
+
+    <!-- 统计卡片 -->
+    <div class="stats-card">
+        <div class="stat-item">
+            <div class="stat-label">📖 修读课程</div>
+            <div class="stat-value" id="totalCourses">0</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-label">⭐ 平均绩点 (GPA)</div>
+            <div class="stat-value gpa-value" id="gpaValue">0.00</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-label">🏅 加权平均分</div>
+            <div class="stat-value" id="weightedAvg">0.0</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-label">✅ 通过课程数</div>
+            <div class="stat-value" id="passedCount">0</div>
+        </div>
+    </div>
+
+    <!-- 成绩表格 -->
+    <div class="table-wrapper">
+        <table class="grade-table" id="gradeTable">
+            <thead>
+            <tr>
+                <th>课程名称</th><th>学分</th><th>成绩</th><th>绩点</th><th>等级</th>
+            </tr>
+            </thead>
+            <tbody id="gradeTableBody">
+            <tr><td colspan="5" style="text-align:center;">加载中...</td></tr>
+            </tbody>
+        </table>
+    </div>
+    <footer>注：绩点计算方式：90-100→4.0，80-89→3.0-3.9，依此类推；平均绩点按学分加权</footer>
+</div>
+
+<script>
+    // ---------- 模拟成绩数据（实际可替换为后端API）----------
+    const STUDENT_GRADES = [
+        { course: "高等数学A", credit: 5, score: 92, gradePoint: 4.0, level: "优秀" },
+        { course: "大学英语IV", credit: 3, score: 86, gradePoint: 3.5, level: "良好" },
+        { course: "程序设计基础", credit: 4, score: 78, gradePoint: 3.0, level: "中等" },
+        { course: "数据结构", credit: 4, score: 88, gradePoint: 3.7, level: "良好" },
+        { course: "线性代数", credit: 3, score: 94, gradePoint: 4.0, level: "优秀" },
+        { course: "大学物理", credit: 4, score: 81, gradePoint: 3.2, level: "良好" },
+        { course: "思政原理", credit: 2, score: 68, gradePoint: 2.0, level: "及格" },
+        { course: "体育", credit: 1, score: 85, gradePoint: 3.4, level: "良好" }
+    ];
+
+    // 辅助：计算加权平均分、总学分、平均绩点(GPA)
+    function computeStats(grades) {
+        let totalCredits = 0;
+        let totalWeightedScore = 0;
+        let totalGradePoints = 0;
+        let passed = 0; // 成绩>=60
+
+        for (let g of grades) {
+            const credit = g.credit;
+            const score = g.score;
+            const gp = g.gradePoint;
+            totalCredits += credit;
+            totalWeightedScore += score * credit;
+            totalGradePoints += gp * credit;
+            if (score >= 60) passed++;
+        }
+
+        const weightedAvg = totalCredits === 0 ? 0 : (totalWeightedScore / totalCredits).toFixed(2);
+        const gpa = totalCredits === 0 ? 0 : (totalGradePoints / totalCredits).toFixed(2);
+        return { totalCredits, weightedAvg: parseFloat(weightedAvg), gpa: parseFloat(gpa), passed };
+    }
+
+    // 渲染表格
+    function renderGradesTable(grades) {
+        const tbody = document.getElementById('gradeTableBody');
+        if (!grades.length) {
+            tbody.innerHTML = '<tr><td colspan="5" style="text-align:center;">暂无成绩数据</td></tr>';
+            return;
+        }
+        tbody.innerHTML = grades.map(g => `
+            <tr>
+                <td>${escapeHtml(g.course)}</td>
+                <td class="credit">${g.credit}</td>
+                <td style="font-weight:600;">${g.score}</td>
+                <td class="grade-point">${g.gradePoint.toFixed(2)}</td>
+                <td><span class="rank-badge">${escapeHtml(g.level)}</span></td>
+            </tr>
+        `).join('');
+    }
+
+    // 简单防XSS
+    function escapeHtml(str) {
+        if (!str) return '';
+        return str.replace(/[&<>]/g, function(m) {
+            if (m === '&') return '&amp;';
+            if (m === '<') return '&lt;';
+            if (m === '>') return '&gt;';
+            return m;
+        });
+    }
+
+    // 更新统计卡片
+    function updateStats(grades) {
+        const stats = computeStats(grades);
+        document.getElementById('totalCourses').innerText = grades.length;
+        document.getElementById('gpaValue').innerText = stats.gpa.toFixed(2);
+        document.getElementById('weightedAvg').innerText = stats.weightedAvg;
+        document.getElementById('passedCount').innerText = stats.passed;
+    }
+
+    // 页面初始化：检查登录状态，加载数据
+    function initPage() {
+        // 1. 检查是否已登录
+        const isLoggedIn = localStorage.getItem('loggedIn');
+        if (isLoggedIn !== 'true') {
+            // 未登录，跳回登录页
+            window.location.href = 'login.html';
+            return;
+        }
+
+        // 2. 显示用户名
+        const displayName = localStorage.getItem('displayName') || '同学';
+        document.getElementById('displayName').innerText = displayName;
+
+        // 3. 加载成绩数据（当前为模拟数据，后续可替换API）
+        // 根据登录用户名可动态获取不同学生数据，这里使用公共数据集
+        // 可以扩展: 如果 username 不同返回不同成绩，演示方便全部用同一组
+        const gradesData = [...STUDENT_GRADES];
+        renderGradesTable(gradesData);
+        updateStats(gradesData);
+    }
+
+    // 退出登录
+    function logout() {
+        localStorage.removeItem('loggedIn');
+        localStorage.removeItem('username');
+        localStorage.removeItem('displayName');
+        localStorage.removeItem('userRole');
+        window.location.href = 'login.html';
+    }
+
+    // 绑定退出按钮事件
+    document.getElementById('logoutBtn').addEventListener('click', logout);
+
+    // 执行初始化
+    initPage();
+</script>
+</body>
+</html>
