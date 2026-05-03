@@ -1,0 +1,4363 @@
+{
+  "RootObjectUUID": "50035a36-978d-4486-8bac-0831043e9766",
+  "MetaVersion": "17.0.0000",
+  "ObjectJsons": {
+    "50035a36-978d-4486-8bac-0831043e9766": [
+      {
+        "_META_": true,
+        "_VERSION_": "",
+        "ObjectName": "student-score",
+        "ObjectTypeID": "ModelWorkspace",
+        "ObjectTypeDisplayName": "ModelWorkspace",
+        "ObjectVersion": "17.0.0000",
+        "ResourceUUIDs": [],
+        "ChildObjectUUIDs": [
+          "aa9de09f-41b7-48e8-8fb8-69d33d6ed977",
+          "7157bb22-6a7b-4aa5-bb15-26c7e2baafbf",
+          "7d7e7a05-bfd7-40f0-989e-19b92b05324f"
+        ]
+      },
+      {
+        "_VERSION_": "17.0.0000"
+      }
+    ],
+    "aa9de09f-41b7-48e8-8fb8-69d33d6ed977": [
+      {
+        "_META_": true,
+        "_VERSION_": "",
+        "ObjectName": "MVWorkspace",
+        "ObjectTypeID": "MVWorkspace",
+        "ObjectTypeDisplayName": "MVWorkspace",
+        "ObjectVersion": "17.0.0000",
+        "ResourceUUIDs": [],
+        "ChildObjectUUIDs": []
+      },
+      {
+        "_VERSION_": "17.0.0000",
+        "DiagramDefaultPaperType": "A4_Landscape",
+        "DiagramDefaultPaperSize": {
+          "Width": 1753,
+          "Height": 1240
+        }
+      }
+    ],
+    "f6e9d505-130c-4b0d-a251-f16fdac7dd00": [
+      {
+        "_META_": true,
+        "_VERSION_": "",
+        "ObjectName": "tc_course",
+        "ObjectTypeID": "MVDiagramShape_Relation",
+        "ObjectTypeDisplayName": "MVDiagramShape_Relation",
+        "ObjectVersion": "17.0.0000",
+        "ResourceUUIDs": [],
+        "ChildObjectUUIDs": []
+      },
+      {
+        "_VERSION_": "17.0.0000",
+        "LineCommon": {
+          "Vertices": [
+            {
+              "X": 50,
+              "Y": 0
+            },
+            {
+              "X": 0,
+              "Y": 0
+            }
+          ],
+          "Color": {
+            "R": 0,
+            "G": 0,
+            "B": 0,
+            "A": {
+              "Value": 1.0
+            },
+            "UsingThemeColor": true
+          },
+          "LineWidth": 1,
+          "BeginOffset": 0,
+          "EndOffset": 0,
+          "CapStyle": "Butt",
+          "DashStyle": "None",
+          "JoinStyle": "Miter",
+          "AsConnector": true,
+          "ShowName": true,
+          "NamePosition": "Begin",
+          "ConnectInfos": [
+            {
+              "Index": 0,
+              "RefUUID": "56591cc2-d166-44d8-a03f-f06596d7df7b"
+            },
+            {
+              "Index": 1,
+              "RefUUID": "767da390-eadd-4c46-b245-4c3e4061a6a2"
+            }
+          ]
+        },
+        "ArrowCommon": {
+          "BeginStyle": "None",
+          "EndStyle": "None"
+        },
+        "ConnectorCommon": {
+          "Type": "Elbow",
+          "VertexMode": "AutoArrange",
+          "StartAxis": "Horizontal"
+        },
+        "RelationCommon": {
+          "OldVersion": false,
+          "Visible": true,
+          "RefUUID": "27899ce6-052e-442c-a504-bebe1dba5c03"
+        }
+      }
+    ],
+    "7157bb22-6a7b-4aa5-bb15-26c7e2baafbf": [
+      {
+        "_META_": true,
+        "_VERSION_": "",
+        "ObjectName": "Model - student-score",
+        "ObjectTypeID": "Model",
+        "ObjectTypeDisplayName": "Model",
+        "ObjectVersion": "17.2.0000",
+        "ResourceUUIDs": [],
+        "ChildObjectUUIDs": [
+          "e9143884-9664-4cfb-a643-65c52a10640f"
+        ]
+      },
+      {
+        "_VERSION_": "17.0.0000",
+        "Name": "Model - student-score",
+        "DefaultSchema": "29b9d6e0-d42f-49e4-bf9c-5ba11b915c48",
+        "CaseSensitive": true,
+        "CreateTime": 1777645153,
+        "ModifyTime": 1777645348
+      },
+      {
+        "_VERSION_": "17.2.0000",
+        "ModelingMethod": 0,
+        "Remarks": ""
+      }
+    ],
+    "e9143884-9664-4cfb-a643-65c52a10640f": [
+      {
+        "_META_": true,
+        "_VERSION_": "",
+        "ObjectName": "Model - student-score",
+        "ObjectTypeID": "Server_MYSQL",
+        "ObjectTypeDisplayName": "Server_MYSQL",
+        "ObjectVersion": "17.1.0004",
+        "ResourceUUIDs": [],
+        "ChildObjectUUIDs": [
+          "29b9d6e0-d42f-49e4-bf9c-5ba11b915c48"
+        ]
+      },
+      {
+        "_VERSION_": "17.0.0000",
+        "Name": "Model - student-score",
+        "ServerVersion": 90700,
+        "ServerVersionStr": "9.7.0",
+        "Edition": "Default",
+        "ServerSettings": {
+          "ServiceProvider": "Default",
+          "Host": "localhost",
+          "Port": 3306,
+          "UserName": "root",
+          "SavePassword": false,
+          "AutoConnect": false,
+          "UseKeepAlive": false,
+          "KeepAliveInterval": 240,
+          "UseConnectionTimeout": true,
+          "ConnectionTimeoutSeconds": 30,
+          "UseReadTimeout": false,
+          "ReadTimeoutSeconds": 30,
+          "UseWriteTimeout": true,
+          "WriteTimeoutSeconds": 30,
+          "SessionLimit": 0,
+          "UseSocketFile": false,
+          "SocketFile": "",
+          "UseCompression": false,
+          "ClientDriverVersion": "Default",
+          "ClientCharacterSet": "",
+          "ClientEncoding": 65001,
+          "CustomDatabaseList": {
+            "UseCustomDatabaseList": false,
+            "DatabaseList": []
+          },
+          "UseSSL": false,
+          "SSL": {
+            "UseAuthen": false,
+            "SaveClientKeyPassword": false,
+            "VerifyCACert": false,
+            "WeakCertValidation": true,
+            "AllowInvalidHostName": false,
+            "Mode": "require"
+          },
+          "UseSSH": false,
+          "SSH": {
+            "Host": "",
+            "Port": 22,
+            "UserName": "",
+            "SavePassword": false,
+            "SavePassphrase": false,
+            "UseCompression": false,
+            "AuthenMethod": "Password"
+          },
+          "UseHTTP": false,
+          "HTTP": {
+            "URL": "",
+            "EncodeBase64": false,
+            "UsePasswordAuthen": false,
+            "UserName": "",
+            "SavePassword": false,
+            "UseCertAuthen": false,
+            "UseProxy": false,
+            "ProxyHost": "",
+            "ProxyPort": 8080,
+            "ProxyUserName": "",
+            "ProxySavePassword": false
+          },
+          "UseCompatibilityMode": false,
+          "Compatibility": {
+            "OverrideLowercaseTableNames": false,
+            "LowercaseTableNames": 0,
+            "OverrideSQLMode": false,
+            "SQLMode": "ONLY_FULL_GROUP_BY, STRICT_TRANS_TABLES, NO_ZERO_IN_DATE, NO_ZERO_DATE, ERROR_FOR_DIVISION_BY_ZERO, NO_ENGINE_SUBSTITUTION",
+            "OverrideIsSupportNDB": false,
+            "IsSupportNDB": false,
+            "OverrideDatabaseListingMethod": false,
+            "DatabaseListingMethod": "ShowDatabasesStatement",
+            "OverrideViewListingMethod": false,
+            "ViewListingMethod": "ShowFullTablesStatement"
+          },
+          "InitialSessionQueries": ""
+        }
+      },
+      {
+        "_VERSION_": "17.1.0000",
+        "Remarks": ""
+      },
+      {
+        "_VERSION_": "17.1.0001"
+      },
+      {
+        "_VERSION_": "17.1.0004"
+      }
+    ],
+    "73ca0567-4893-4f73-b3fa-4dc44124a69c": [
+      {
+        "_META_": true,
+        "_VERSION_": "",
+        "ObjectName": "course",
+        "ObjectTypeID": "Table_MYSQL",
+        "ObjectTypeDisplayName": "Table_MYSQL",
+        "ObjectVersion": "17.2.0000",
+        "ResourceUUIDs": [],
+        "ChildObjectUUIDs": []
+      },
+      {
+        "_VERSION_": "17.0.0000",
+        "Fields": [
+          {
+            "Name": "id",
+            "Type": "varchar",
+            "Length": 50,
+            "Decimals": -2147483648,
+            "IsUnsigned": false,
+            "IsZeroFill": false,
+            "SetEnumValues": "",
+            "IsBinary": false,
+            "Charset": "utf8mb3",
+            "Collation": "utf8mb3_general_ci",
+            "IsNullable": false,
+            "DefaultType": "Empty",
+            "DefaultValue": "",
+            "IsOnUpdateCurrentTimestamp": false,
+            "IsAutoInc": false,
+            "Comment": "编号",
+            "ColumnFormat": "",
+            "Storage": "",
+            "IsVirtual": false,
+            "IsGeneratedAlways": false,
+            "VirtualExpr": "",
+            "VirtualType": ""
+          },
+          {
+            "Name": "name",
+            "Type": "varchar",
+            "Length": 40,
+            "Decimals": -2147483648,
+            "IsUnsigned": false,
+            "IsZeroFill": false,
+            "SetEnumValues": "",
+            "IsBinary": false,
+            "Charset": "utf8mb3",
+            "Collation": "utf8mb3_general_ci",
+            "IsNullable": false,
+            "DefaultType": "None",
+            "DefaultValue": "",
+            "IsOnUpdateCurrentTimestamp": false,
+            "IsAutoInc": false,
+            "Comment": "课程名",
+            "ColumnFormat": "",
+            "Storage": "",
+            "IsVirtual": false,
+            "IsGeneratedAlways": false,
+            "VirtualExpr": "",
+            "VirtualType": ""
+          },
+          {
+            "Name": "credits",
+            "Type": "decimal",
+            "Length": 4,
+            "Decimals": 1,
+            "IsUnsigned": false,
+            "IsZeroFill": false,
+            "SetEnumValues": "",
+            "IsBinary": false,
+            "Charset": "",
+            "Collation": "",
+            "IsNullable": false,
+            "DefaultType": "Others",
+            "DefaultValue": "2.0",
+            "IsOnUpdateCurrentTimestamp": false,
+            "IsAutoInc": false,
+            "Comment": "学分",
+            "ColumnFormat": "",
+            "Storage": "",
+            "IsVirtual": false,
+            "IsGeneratedAlways": false,
+            "VirtualExpr": "",
+            "VirtualType": ""
+          },
+          {
+            "Name": "score",
+            "Type": "int",
+            "Length": -2147483648,
+            "Decimals": -2147483648,
+            "IsUnsigned": false,
+            "IsZeroFill": false,
+            "SetEnumValues": "",
+            "IsBinary": false,
+            "Charset": "",
+            "Collation": "",
+            "IsNullable": false,
+            "DefaultType": "Others",
+            "DefaultValue": "100",
+            "IsOnUpdateCurrentTimestamp": false,
+            "IsAutoInc": false,
+            "Comment": "满分",
+            "ColumnFormat": "",
+            "Storage": "",
+            "IsVirtual": false,
+            "IsGeneratedAlways": false,
+            "VirtualExpr": "",
+            "VirtualType": ""
+          },
+          {
+            "Name": "number",
+            "Type": "int",
+            "Length": -2147483648,
+            "Decimals": -2147483648,
+            "IsUnsigned": false,
+            "IsZeroFill": false,
+            "SetEnumValues": "",
+            "IsBinary": false,
+            "Charset": "",
+            "Collation": "",
+            "IsNullable": false,
+            "DefaultType": "Others",
+            "DefaultValue": "32",
+            "IsOnUpdateCurrentTimestamp": false,
+            "IsAutoInc": false,
+            "Comment": "课时",
+            "ColumnFormat": "",
+            "Storage": "",
+            "IsVirtual": false,
+            "IsGeneratedAlways": false,
+            "VirtualExpr": "",
+            "VirtualType": ""
+          },
+          {
+            "Name": "year",
+            "Type": "int",
+            "Length": -2147483648,
+            "Decimals": -2147483648,
+            "IsUnsigned": false,
+            "IsZeroFill": false,
+            "SetEnumValues": "",
+            "IsBinary": false,
+            "Charset": "",
+            "Collation": "",
+            "IsNullable": false,
+            "DefaultType": "Others",
+            "DefaultValue": "2016",
+            "IsOnUpdateCurrentTimestamp": false,
+            "IsAutoInc": false,
+            "Comment": "届时",
+            "ColumnFormat": "",
+            "Storage": "",
+            "IsVirtual": false,
+            "IsGeneratedAlways": false,
+            "VirtualExpr": "",
+            "VirtualType": ""
+          },
+          {
+            "Name": "term",
+            "Type": "tinyint",
+            "Length": -2147483648,
+            "Decimals": -2147483648,
+            "IsUnsigned": false,
+            "IsZeroFill": false,
+            "SetEnumValues": "",
+            "IsBinary": false,
+            "Charset": "",
+            "Collation": "",
+            "IsNullable": false,
+            "DefaultType": "Others",
+            "DefaultValue": "0",
+            "IsOnUpdateCurrentTimestamp": false,
+            "IsAutoInc": false,
+            "Comment": "学期",
+            "ColumnFormat": "",
+            "Storage": "",
+            "IsVirtual": false,
+            "IsGeneratedAlways": false,
+            "VirtualExpr": "",
+            "VirtualType": ""
+          },
+          {
+            "Name": "type",
+            "Type": "tinyint",
+            "Length": -2147483648,
+            "Decimals": -2147483648,
+            "IsUnsigned": false,
+            "IsZeroFill": false,
+            "SetEnumValues": "",
+            "IsBinary": false,
+            "Charset": "",
+            "Collation": "",
+            "IsNullable": false,
+            "DefaultType": "Others",
+            "DefaultValue": "1",
+            "IsOnUpdateCurrentTimestamp": false,
+            "IsAutoInc": false,
+            "Comment": "类别 1必修 2选修",
+            "ColumnFormat": "",
+            "Storage": "",
+            "IsVirtual": false,
+            "IsGeneratedAlways": false,
+            "VirtualExpr": "",
+            "VirtualType": ""
+          },
+          {
+            "Name": "profession",
+            "Type": "varchar",
+            "Length": 50,
+            "Decimals": -2147483648,
+            "IsUnsigned": false,
+            "IsZeroFill": false,
+            "SetEnumValues": "",
+            "IsBinary": false,
+            "Charset": "utf8mb3",
+            "Collation": "utf8mb3_general_ci",
+            "IsNullable": false,
+            "DefaultType": "Empty",
+            "DefaultValue": "",
+            "IsOnUpdateCurrentTimestamp": false,
+            "IsAutoInc": false,
+            "Comment": "专业",
+            "ColumnFormat": "",
+            "Storage": "",
+            "IsVirtual": false,
+            "IsGeneratedAlways": false,
+            "VirtualExpr": "",
+            "VirtualType": ""
+          },
+          {
+            "Name": "create_time",
+            "Type": "timestamp",
+            "Length": -2147483648,
+            "Decimals": -2147483648,
+            "IsUnsigned": false,
+            "IsZeroFill": false,
+            "SetEnumValues": "",
+            "IsBinary": false,
+            "Charset": "",
+            "Collation": "",
+            "IsNullable": false,
+            "DefaultType": "Others",
+            "DefaultValue": "CURRENT_TIMESTAMP",
+            "IsOnUpdateCurrentTimestamp": false,
+            "IsAutoInc": false,
+            "Comment": "",
+            "ColumnFormat": "",
+            "Storage": "",
+            "IsVirtual": false,
+            "IsGeneratedAlways": false,
+            "VirtualExpr": "",
+            "VirtualType": ""
+          }
+        ],
+        "PrimaryKey": {
+          "Name": "",
+          "Fields": [
+            {
+              "Name": "id",
+              "KeyLength": 0,
+              "Order": "ASC"
+            }
+          ],
+          "IndexMethod": "BTREE",
+          "Comment": ""
+        },
+        "Engine": "InnoDB",
+        "AutoIncrement": 0,
+        "Tablespace": "",
+        "Storage": "",
+        "Union": "",
+        "CharacterSet": "utf8mb3",
+        "Checksum": false,
+        "Collation": "utf8mb3_general_ci",
+        "Comment": "",
+        "Compression": "",
+        "Connection": "",
+        "DataDirectory": "",
+        "DelayKeyWrite": false,
+        "Encryption": false,
+        "IndexDirectory": "",
+        "InsertMethod": "",
+        "RowFormat": "DYNAMIC",
+        "StatsAutoRecalc": "",
+        "StatsPersistent": "",
+        "StatsSamplePages": 0,
+        "AVGRowLength": 0,
+        "MaxRows": 0,
+        "MinRows": 0,
+        "PackKeys": "",
+        "KeyBlockSize": 0,
+        "PartitionBy": "",
+        "PartitionByExpr": "",
+        "Partitions": 0,
+        "SubPartitionBy": "",
+        "SubPartitionByExpr": "",
+        "SubPartitions": 0,
+        "CreateOptions": "row_format=DYNAMIC",
+        "CreateTime": "2026-04-28 23:14:29",
+        "CheckTime": "",
+        "DataFree": 0,
+        "DataLength": 16384,
+        "IndexLength": 0,
+        "MaxDataLength": 0,
+        "PageCheckSum": false,
+        "Rows": 28,
+        "Transactional": false,
+        "UpdateTime": ""
+      },
+      {
+        "_VERSION_": "17.1.0002"
+      },
+      {
+        "_VERSION_": "17.2.0000",
+        "ModelOption": {
+          "DimensionalRole": "Unknown",
+          "DataVaultComponent": "Unknown"
+        }
+      }
+    ],
+    "29b9d6e0-d42f-49e4-bf9c-5ba11b915c48": [
+      {
+        "_META_": true,
+        "_VERSION_": "",
+        "ObjectName": "db_student_score",
+        "ObjectTypeID": "Schema_MYSQL",
+        "ObjectTypeDisplayName": "Schema_MYSQL",
+        "ObjectVersion": "17.0.0000",
+        "ResourceUUIDs": [],
+        "ChildObjectUUIDs": [
+          "26f62391-7a85-4930-8335-59e1375b0acf",
+          "73ca0567-4893-4f73-b3fa-4dc44124a69c",
+          "39af7674-4209-4ff8-aab6-4a96fe543665",
+          "9821a05d-1720-4832-9375-b8b53eb538e2",
+          "5408e03d-f51e-4ab6-a49e-8ad7aa746815",
+          "a222126a-480e-471c-8b3f-d2609ed5228c",
+          "b500fdc0-f7dd-49b4-a27f-c6e13f692cde",
+          "27899ce6-052e-442c-a504-bebe1dba5c03",
+          "17604b0c-e2bc-4153-8bbd-fa1e80f5f7df",
+          "c0220ac2-3e8b-4bba-8369-b5f60fc7a541",
+          "561c8629-74dd-4c58-aeef-c2a60219dee2"
+        ]
+      },
+      {
+        "_VERSION_": "17.0.0000",
+        "Name": "db_student_score",
+        "Tables": [
+          {
+            "Name": "admin",
+            "RefUUID": "26f62391-7a85-4930-8335-59e1375b0acf"
+          },
+          {
+            "Name": "course",
+            "RefUUID": "73ca0567-4893-4f73-b3fa-4dc44124a69c"
+          },
+          {
+            "Name": "course_info",
+            "RefUUID": "39af7674-4209-4ff8-aab6-4a96fe543665"
+          },
+          {
+            "Name": "profession",
+            "RefUUID": "9821a05d-1720-4832-9375-b8b53eb538e2"
+          },
+          {
+            "Name": "student",
+            "RefUUID": "5408e03d-f51e-4ab6-a49e-8ad7aa746815"
+          },
+          {
+            "Name": "student_course",
+            "RefUUID": "a222126a-480e-471c-8b3f-d2609ed5228c"
+          },
+          {
+            "Name": "teacher",
+            "RefUUID": "b500fdc0-f7dd-49b4-a27f-c6e13f692cde"
+          },
+          {
+            "Name": "teacher_course",
+            "RefUUID": "27899ce6-052e-442c-a504-bebe1dba5c03"
+          },
+          {
+            "Name": "timetable",
+            "RefUUID": "17604b0c-e2bc-4153-8bbd-fa1e80f5f7df"
+          },
+          {
+            "Name": "upload",
+            "RefUUID": "c0220ac2-3e8b-4bba-8369-b5f60fc7a541"
+          },
+          {
+            "Name": "week",
+            "RefUUID": "561c8629-74dd-4c58-aeef-c2a60219dee2"
+          }
+        ],
+        "Charset": "",
+        "Collation": ""
+      }
+    ],
+    "39af7674-4209-4ff8-aab6-4a96fe543665": [
+      {
+        "_META_": true,
+        "_VERSION_": "",
+        "ObjectName": "course_info",
+        "ObjectTypeID": "Table_MYSQL",
+        "ObjectTypeDisplayName": "Table_MYSQL",
+        "ObjectVersion": "17.2.0000",
+        "ResourceUUIDs": [],
+        "ChildObjectUUIDs": []
+      },
+      {
+        "_VERSION_": "17.0.0000",
+        "Fields": [
+          {
+            "Name": "id",
+            "Type": "int",
+            "Length": -2147483648,
+            "Decimals": -2147483648,
+            "IsUnsigned": false,
+            "IsZeroFill": false,
+            "SetEnumValues": "",
+            "IsBinary": false,
+            "Charset": "",
+            "Collation": "",
+            "IsNullable": false,
+            "DefaultType": "None",
+            "DefaultValue": "",
+            "IsOnUpdateCurrentTimestamp": false,
+            "IsAutoInc": true,
+            "Comment": "",
+            "ColumnFormat": "",
+            "Storage": "",
+            "IsVirtual": false,
+            "IsGeneratedAlways": false,
+            "VirtualExpr": "",
+            "VirtualType": ""
+          },
+          {
+            "Name": "course_id",
+            "Type": "varchar",
+            "Length": 50,
+            "Decimals": -2147483648,
+            "IsUnsigned": false,
+            "IsZeroFill": false,
+            "SetEnumValues": "",
+            "IsBinary": false,
+            "Charset": "utf8mb3",
+            "Collation": "utf8mb3_general_ci",
+            "IsNullable": false,
+            "DefaultType": "None",
+            "DefaultValue": "",
+            "IsOnUpdateCurrentTimestamp": false,
+            "IsAutoInc": false,
+            "Comment": "",
+            "ColumnFormat": "",
+            "Storage": "",
+            "IsVirtual": false,
+            "IsGeneratedAlways": false,
+            "VirtualExpr": "",
+            "VirtualType": ""
+          },
+          {
+            "Name": "start",
+            "Type": "int",
+            "Length": -2147483648,
+            "Decimals": -2147483648,
+            "IsUnsigned": false,
+            "IsZeroFill": false,
+            "SetEnumValues": "",
+            "IsBinary": false,
+            "Charset": "",
+            "Collation": "",
+            "IsNullable": false,
+            "DefaultType": "None",
+            "DefaultValue": "",
+            "IsOnUpdateCurrentTimestamp": false,
+            "IsAutoInc": false,
+            "Comment": "",
+            "ColumnFormat": "",
+            "Storage": "",
+            "IsVirtual": false,
+            "IsGeneratedAlways": false,
+            "VirtualExpr": "",
+            "VirtualType": ""
+          },
+          {
+            "Name": "end",
+            "Type": "int",
+            "Length": -2147483648,
+            "Decimals": -2147483648,
+            "IsUnsigned": false,
+            "IsZeroFill": false,
+            "SetEnumValues": "",
+            "IsBinary": false,
+            "Charset": "",
+            "Collation": "",
+            "IsNullable": false,
+            "DefaultType": "None",
+            "DefaultValue": "",
+            "IsOnUpdateCurrentTimestamp": false,
+            "IsAutoInc": false,
+            "Comment": "",
+            "ColumnFormat": "",
+            "Storage": "",
+            "IsVirtual": false,
+            "IsGeneratedAlways": false,
+            "VirtualExpr": "",
+            "VirtualType": ""
+          },
+          {
+            "Name": "room",
+            "Type": "varchar",
+            "Length": 50,
+            "Decimals": -2147483648,
+            "IsUnsigned": false,
+            "IsZeroFill": false,
+            "SetEnumValues": "",
+            "IsBinary": false,
+            "Charset": "utf8mb3",
+            "Collation": "utf8mb3_general_ci",
+            "IsNullable": true,
+            "DefaultType": "Null",
+            "DefaultValue": "",
+            "IsOnUpdateCurrentTimestamp": false,
+            "IsAutoInc": false,
+            "Comment": "",
+            "ColumnFormat": "",
+            "Storage": "",
+            "IsVirtual": false,
+            "IsGeneratedAlways": false,
+            "VirtualExpr": "",
+            "VirtualType": ""
+          },
+          {
+            "Name": "profession",
+            "Type": "varchar",
+            "Length": 50,
+            "Decimals": -2147483648,
+            "IsUnsigned": false,
+            "IsZeroFill": false,
+            "SetEnumValues": "",
+            "IsBinary": false,
+            "Charset": "utf8mb3",
+            "Collation": "utf8mb3_general_ci",
+            "IsNullable": true,
+            "DefaultType": "Null",
+            "DefaultValue": "",
+            "IsOnUpdateCurrentTimestamp": false,
+            "IsAutoInc": false,
+            "Comment": "",
+            "ColumnFormat": "",
+            "Storage": "",
+            "IsVirtual": false,
+            "IsGeneratedAlways": false,
+            "VirtualExpr": "",
+            "VirtualType": ""
+          }
+        ],
+        "Indexes": [
+          {
+            "Name": "ci_course",
+            "Fields": [
+              {
+                "Name": "course_id",
+                "KeyLength": 0,
+                "Order": "ASC"
+              }
+            ],
+            "Online": false,
+            "Type": "NORMAL",
+            "Method": "BTREE",
+            "KeyBlockSize": 0,
+            "Parser": "",
+            "Comment": "",
+            "Algorithm": "",
+            "Lock": ""
+          }
+        ],
+        "ForeignKeys": [
+          {
+            "Name": "ci_course",
+            "Fields": [
+              "course_id"
+            ],
+            "ReferenceSchema": "db_student_score",
+            "ReferenceTable": "course",
+            "ReferenceFields": [
+              "id"
+            ],
+            "OnDelete": "RESTRICT",
+            "OnUpdate": "CASCADE",
+            "SourceCardinality": "ZeroOrManyRelationship",
+            "TargetCardinality": "OneAndOnlyOneRelationship"
+          }
+        ],
+        "PrimaryKey": {
+          "Name": "",
+          "Fields": [
+            {
+              "Name": "id",
+              "KeyLength": 0,
+              "Order": "ASC"
+            }
+          ],
+          "IndexMethod": "BTREE",
+          "Comment": ""
+        },
+        "Engine": "InnoDB",
+        "AutoIncrement": 31,
+        "Tablespace": "",
+        "Storage": "",
+        "Union": "",
+        "CharacterSet": "utf8mb3",
+        "Checksum": false,
+        "Collation": "utf8mb3_general_ci",
+        "Comment": "",
+        "Compression": "",
+        "Connection": "",
+        "DataDirectory": "",
+        "DelayKeyWrite": false,
+        "Encryption": false,
+        "IndexDirectory": "",
+        "InsertMethod": "",
+        "RowFormat": "DYNAMIC",
+        "StatsAutoRecalc": "",
+        "StatsPersistent": "",
+        "StatsSamplePages": 0,
+        "AVGRowLength": 0,
+        "MaxRows": 0,
+        "MinRows": 0,
+        "PackKeys": "",
+        "KeyBlockSize": 0,
+        "PartitionBy": "",
+        "PartitionByExpr": "",
+        "Partitions": 0,
+        "SubPartitionBy": "",
+        "SubPartitionByExpr": "",
+        "SubPartitions": 0,
+        "CreateOptions": "row_format=DYNAMIC",
+        "CreateTime": "2026-04-30 22:53:50",
+        "CheckTime": "",
+        "DataFree": 0,
+        "DataLength": 16384,
+        "IndexLength": 16384,
+        "MaxDataLength": 0,
+        "PageCheckSum": false,
+        "Rows": 28,
+        "Transactional": false,
+        "UpdateTime": ""
+      },
+      {
+        "_VERSION_": "17.1.0002"
+      },
+      {
+        "_VERSION_": "17.2.0000",
+        "ModelOption": {
+          "DimensionalRole": "Unknown",
+          "DataVaultComponent": "Unknown"
+        }
+      }
+    ],
+    "26f62391-7a85-4930-8335-59e1375b0acf": [
+      {
+        "_META_": true,
+        "_VERSION_": "",
+        "ObjectName": "admin",
+        "ObjectTypeID": "Table_MYSQL",
+        "ObjectTypeDisplayName": "Table_MYSQL",
+        "ObjectVersion": "17.2.0000",
+        "ResourceUUIDs": [],
+        "ChildObjectUUIDs": []
+      },
+      {
+        "_VERSION_": "17.0.0000",
+        "Fields": [
+          {
+            "Name": "id",
+            "Type": "int",
+            "Length": -2147483648,
+            "Decimals": -2147483648,
+            "IsUnsigned": false,
+            "IsZeroFill": false,
+            "SetEnumValues": "",
+            "IsBinary": false,
+            "Charset": "",
+            "Collation": "",
+            "IsNullable": false,
+            "DefaultType": "None",
+            "DefaultValue": "",
+            "IsOnUpdateCurrentTimestamp": false,
+            "IsAutoInc": true,
+            "Comment": "",
+            "ColumnFormat": "",
+            "Storage": "",
+            "IsVirtual": false,
+            "IsGeneratedAlways": false,
+            "VirtualExpr": "",
+            "VirtualType": ""
+          },
+          {
+            "Name": "username",
+            "Type": "varchar",
+            "Length": 50,
+            "Decimals": -2147483648,
+            "IsUnsigned": false,
+            "IsZeroFill": false,
+            "SetEnumValues": "",
+            "IsBinary": false,
+            "Charset": "utf8mb3",
+            "Collation": "utf8mb3_general_ci",
+            "IsNullable": false,
+            "DefaultType": "Empty",
+            "DefaultValue": "",
+            "IsOnUpdateCurrentTimestamp": false,
+            "IsAutoInc": false,
+            "Comment": "",
+            "ColumnFormat": "",
+            "Storage": "",
+            "IsVirtual": false,
+            "IsGeneratedAlways": false,
+            "VirtualExpr": "",
+            "VirtualType": ""
+          },
+          {
+            "Name": "password",
+            "Type": "varchar",
+            "Length": 255,
+            "Decimals": -2147483648,
+            "IsUnsigned": false,
+            "IsZeroFill": false,
+            "SetEnumValues": "",
+            "IsBinary": false,
+            "Charset": "utf8mb3",
+            "Collation": "utf8mb3_general_ci",
+            "IsNullable": false,
+            "DefaultType": "Empty",
+            "DefaultValue": "",
+            "IsOnUpdateCurrentTimestamp": false,
+            "IsAutoInc": false,
+            "Comment": "",
+            "ColumnFormat": "",
+            "Storage": "",
+            "IsVirtual": false,
+            "IsGeneratedAlways": false,
+            "VirtualExpr": "",
+            "VirtualType": ""
+          },
+          {
+            "Name": "real_name",
+            "Type": "varchar",
+            "Length": 50,
+            "Decimals": -2147483648,
+            "IsUnsigned": false,
+            "IsZeroFill": false,
+            "SetEnumValues": "",
+            "IsBinary": false,
+            "Charset": "utf8mb3",
+            "Collation": "utf8mb3_general_ci",
+            "IsNullable": false,
+            "DefaultType": "Empty",
+            "DefaultValue": "",
+            "IsOnUpdateCurrentTimestamp": false,
+            "IsAutoInc": false,
+            "Comment": "",
+            "ColumnFormat": "",
+            "Storage": "",
+            "IsVirtual": false,
+            "IsGeneratedAlways": false,
+            "VirtualExpr": "",
+            "VirtualType": ""
+          },
+          {
+            "Name": "level",
+            "Type": "tinyint",
+            "Length": -2147483648,
+            "Decimals": -2147483648,
+            "IsUnsigned": false,
+            "IsZeroFill": false,
+            "SetEnumValues": "",
+            "IsBinary": false,
+            "Charset": "",
+            "Collation": "",
+            "IsNullable": false,
+            "DefaultType": "Others",
+            "DefaultValue": "0",
+            "IsOnUpdateCurrentTimestamp": false,
+            "IsAutoInc": false,
+            "Comment": "",
+            "ColumnFormat": "",
+            "Storage": "",
+            "IsVirtual": false,
+            "IsGeneratedAlways": false,
+            "VirtualExpr": "",
+            "VirtualType": ""
+          },
+          {
+            "Name": "school",
+            "Type": "varchar",
+            "Length": 50,
+            "Decimals": -2147483648,
+            "IsUnsigned": false,
+            "IsZeroFill": false,
+            "SetEnumValues": "",
+            "IsBinary": false,
+            "Charset": "utf8mb3",
+            "Collation": "utf8mb3_general_ci",
+            "IsNullable": false,
+            "DefaultType": "Empty",
+            "DefaultValue": "",
+            "IsOnUpdateCurrentTimestamp": false,
+            "IsAutoInc": false,
+            "Comment": "",
+            "ColumnFormat": "",
+            "Storage": "",
+            "IsVirtual": false,
+            "IsGeneratedAlways": false,
+            "VirtualExpr": "",
+            "VirtualType": ""
+          },
+          {
+            "Name": "email",
+            "Type": "varchar",
+            "Length": 50,
+            "Decimals": -2147483648,
+            "IsUnsigned": false,
+            "IsZeroFill": false,
+            "SetEnumValues": "",
+            "IsBinary": false,
+            "Charset": "utf8mb3",
+            "Collation": "utf8mb3_general_ci",
+            "IsNullable": false,
+            "DefaultType": "Others",
+            "DefaultValue": "'0'",
+            "IsOnUpdateCurrentTimestamp": false,
+            "IsAutoInc": false,
+            "Comment": "",
+            "ColumnFormat": "",
+            "Storage": "",
+            "IsVirtual": false,
+            "IsGeneratedAlways": false,
+            "VirtualExpr": "",
+            "VirtualType": ""
+          },
+          {
+            "Name": "phone",
+            "Type": "varchar",
+            "Length": 50,
+            "Decimals": -2147483648,
+            "IsUnsigned": false,
+            "IsZeroFill": false,
+            "SetEnumValues": "",
+            "IsBinary": false,
+            "Charset": "utf8mb3",
+            "Collation": "utf8mb3_general_ci",
+            "IsNullable": false,
+            "DefaultType": "Empty",
+            "DefaultValue": "",
+            "IsOnUpdateCurrentTimestamp": false,
+            "IsAutoInc": false,
+            "Comment": "",
+            "ColumnFormat": "",
+            "Storage": "",
+            "IsVirtual": false,
+            "IsGeneratedAlways": false,
+            "VirtualExpr": "",
+            "VirtualType": ""
+          },
+          {
+            "Name": "sex",
+            "Type": "tinyint",
+            "Length": -2147483648,
+            "Decimals": -2147483648,
+            "IsUnsigned": false,
+            "IsZeroFill": false,
+            "SetEnumValues": "",
+            "IsBinary": false,
+            "Charset": "",
+            "Collation": "",
+            "IsNullable": false,
+            "DefaultType": "Others",
+            "DefaultValue": "0",
+            "IsOnUpdateCurrentTimestamp": false,
+            "IsAutoInc": false,
+            "Comment": "",
+            "ColumnFormat": "",
+            "Storage": "",
+            "IsVirtual": false,
+            "IsGeneratedAlways": false,
+            "VirtualExpr": "",
+            "VirtualType": ""
+          },
+          {
+            "Name": "create_time",
+            "Type": "timestamp",
+            "Length": -2147483648,
+            "Decimals": -2147483648,
+            "IsUnsigned": false,
+            "IsZeroFill": false,
+            "SetEnumValues": "",
+            "IsBinary": false,
+            "Charset": "",
+            "Collation": "",
+            "IsNullable": false,
+            "DefaultType": "Others",
+            "DefaultValue": "CURRENT_TIMESTAMP",
+            "IsOnUpdateCurrentTimestamp": false,
+            "IsAutoInc": false,
+            "Comment": "创建时间",
+            "ColumnFormat": "",
+            "Storage": "",
+            "IsVirtual": false,
+            "IsGeneratedAlways": false,
+            "VirtualExpr": "",
+            "VirtualType": ""
+          }
+        ],
+        "PrimaryKey": {
+          "Name": "",
+          "Fields": [
+            {
+              "Name": "id",
+              "KeyLength": 0,
+              "Order": "ASC"
+            }
+          ],
+          "IndexMethod": "BTREE",
+          "Comment": ""
+        },
+        "Engine": "InnoDB",
+        "AutoIncrement": 2,
+        "Tablespace": "",
+        "Storage": "",
+        "Union": "",
+        "CharacterSet": "utf8mb3",
+        "Checksum": false,
+        "Collation": "utf8mb3_general_ci",
+        "Comment": "",
+        "Compression": "",
+        "Connection": "",
+        "DataDirectory": "",
+        "DelayKeyWrite": false,
+        "Encryption": false,
+        "IndexDirectory": "",
+        "InsertMethod": "",
+        "RowFormat": "DYNAMIC",
+        "StatsAutoRecalc": "",
+        "StatsPersistent": "",
+        "StatsSamplePages": 0,
+        "AVGRowLength": 0,
+        "MaxRows": 0,
+        "MinRows": 0,
+        "PackKeys": "",
+        "KeyBlockSize": 0,
+        "PartitionBy": "",
+        "PartitionByExpr": "",
+        "Partitions": 0,
+        "SubPartitionBy": "",
+        "SubPartitionByExpr": "",
+        "SubPartitions": 0,
+        "CreateOptions": "row_format=DYNAMIC",
+        "CreateTime": "2026-04-28 23:14:29",
+        "CheckTime": "",
+        "DataFree": 0,
+        "DataLength": 16384,
+        "IndexLength": 0,
+        "MaxDataLength": 0,
+        "PageCheckSum": false,
+        "Rows": 1,
+        "Transactional": false,
+        "UpdateTime": ""
+      },
+      {
+        "_VERSION_": "17.1.0002"
+      },
+      {
+        "_VERSION_": "17.2.0000",
+        "ModelOption": {
+          "DimensionalRole": "Unknown",
+          "DataVaultComponent": "Unknown"
+        }
+      }
+    ],
+    "27899ce6-052e-442c-a504-bebe1dba5c03": [
+      {
+        "_META_": true,
+        "_VERSION_": "",
+        "ObjectName": "teacher_course",
+        "ObjectTypeID": "Table_MYSQL",
+        "ObjectTypeDisplayName": "Table_MYSQL",
+        "ObjectVersion": "17.2.0000",
+        "ResourceUUIDs": [],
+        "ChildObjectUUIDs": []
+      },
+      {
+        "_VERSION_": "17.0.0000",
+        "Fields": [
+          {
+            "Name": "id",
+            "Type": "int",
+            "Length": -2147483648,
+            "Decimals": -2147483648,
+            "IsUnsigned": false,
+            "IsZeroFill": false,
+            "SetEnumValues": "",
+            "IsBinary": false,
+            "Charset": "",
+            "Collation": "",
+            "IsNullable": false,
+            "DefaultType": "None",
+            "DefaultValue": "",
+            "IsOnUpdateCurrentTimestamp": false,
+            "IsAutoInc": true,
+            "Comment": "",
+            "ColumnFormat": "",
+            "Storage": "",
+            "IsVirtual": false,
+            "IsGeneratedAlways": false,
+            "VirtualExpr": "",
+            "VirtualType": ""
+          },
+          {
+            "Name": "teacher_id",
+            "Type": "varchar",
+            "Length": 20,
+            "Decimals": -2147483648,
+            "IsUnsigned": false,
+            "IsZeroFill": false,
+            "SetEnumValues": "",
+            "IsBinary": false,
+            "Charset": "utf8mb3",
+            "Collation": "utf8mb3_general_ci",
+            "IsNullable": false,
+            "DefaultType": "None",
+            "DefaultValue": "",
+            "IsOnUpdateCurrentTimestamp": false,
+            "IsAutoInc": false,
+            "Comment": "",
+            "ColumnFormat": "",
+            "Storage": "",
+            "IsVirtual": false,
+            "IsGeneratedAlways": false,
+            "VirtualExpr": "",
+            "VirtualType": ""
+          },
+          {
+            "Name": "username",
+            "Type": "varchar",
+            "Length": 255,
+            "Decimals": -2147483648,
+            "IsUnsigned": false,
+            "IsZeroFill": false,
+            "SetEnumValues": "",
+            "IsBinary": false,
+            "Charset": "utf8mb3",
+            "Collation": "utf8mb3_general_ci",
+            "IsNullable": false,
+            "DefaultType": "None",
+            "DefaultValue": "",
+            "IsOnUpdateCurrentTimestamp": false,
+            "IsAutoInc": false,
+            "Comment": "",
+            "ColumnFormat": "",
+            "Storage": "",
+            "IsVirtual": false,
+            "IsGeneratedAlways": false,
+            "VirtualExpr": "",
+            "VirtualType": ""
+          },
+          {
+            "Name": "name",
+            "Type": "varchar",
+            "Length": 255,
+            "Decimals": -2147483648,
+            "IsUnsigned": false,
+            "IsZeroFill": false,
+            "SetEnumValues": "",
+            "IsBinary": false,
+            "Charset": "utf8mb3",
+            "Collation": "utf8mb3_general_ci",
+            "IsNullable": false,
+            "DefaultType": "None",
+            "DefaultValue": "",
+            "IsOnUpdateCurrentTimestamp": false,
+            "IsAutoInc": false,
+            "Comment": "",
+            "ColumnFormat": "",
+            "Storage": "",
+            "IsVirtual": false,
+            "IsGeneratedAlways": false,
+            "VirtualExpr": "",
+            "VirtualType": ""
+          },
+          {
+            "Name": "profession",
+            "Type": "varchar",
+            "Length": 255,
+            "Decimals": -2147483648,
+            "IsUnsigned": false,
+            "IsZeroFill": false,
+            "SetEnumValues": "",
+            "IsBinary": false,
+            "Charset": "utf8mb3",
+            "Collation": "utf8mb3_general_ci",
+            "IsNullable": false,
+            "DefaultType": "None",
+            "DefaultValue": "",
+            "IsOnUpdateCurrentTimestamp": false,
+            "IsAutoInc": false,
+            "Comment": "",
+            "ColumnFormat": "",
+            "Storage": "",
+            "IsVirtual": false,
+            "IsGeneratedAlways": false,
+            "VirtualExpr": "",
+            "VirtualType": ""
+          },
+          {
+            "Name": "grade",
+            "Type": "varchar",
+            "Length": 255,
+            "Decimals": -2147483648,
+            "IsUnsigned": false,
+            "IsZeroFill": false,
+            "SetEnumValues": "",
+            "IsBinary": false,
+            "Charset": "utf8mb3",
+            "Collation": "utf8mb3_general_ci",
+            "IsNullable": false,
+            "DefaultType": "None",
+            "DefaultValue": "",
+            "IsOnUpdateCurrentTimestamp": false,
+            "IsAutoInc": false,
+            "Comment": "",
+            "ColumnFormat": "",
+            "Storage": "",
+            "IsVirtual": false,
+            "IsGeneratedAlways": false,
+            "VirtualExpr": "",
+            "VirtualType": ""
+          },
+          {
+            "Name": "term",
+            "Type": "tinyint",
+            "Length": -2147483648,
+            "Decimals": -2147483648,
+            "IsUnsigned": false,
+            "IsZeroFill": false,
+            "SetEnumValues": "",
+            "IsBinary": false,
+            "Charset": "",
+            "Collation": "",
+            "IsNullable": false,
+            "DefaultType": "None",
+            "DefaultValue": "",
+            "IsOnUpdateCurrentTimestamp": false,
+            "IsAutoInc": false,
+            "Comment": "",
+            "ColumnFormat": "",
+            "Storage": "",
+            "IsVirtual": false,
+            "IsGeneratedAlways": false,
+            "VirtualExpr": "",
+            "VirtualType": ""
+          },
+          {
+            "Name": "course_id",
+            "Type": "varchar",
+            "Length": 50,
+            "Decimals": -2147483648,
+            "IsUnsigned": false,
+            "IsZeroFill": false,
+            "SetEnumValues": "",
+            "IsBinary": false,
+            "Charset": "utf8mb3",
+            "Collation": "utf8mb3_general_ci",
+            "IsNullable": false,
+            "DefaultType": "None",
+            "DefaultValue": "",
+            "IsOnUpdateCurrentTimestamp": false,
+            "IsAutoInc": false,
+            "Comment": "",
+            "ColumnFormat": "",
+            "Storage": "",
+            "IsVirtual": false,
+            "IsGeneratedAlways": false,
+            "VirtualExpr": "",
+            "VirtualType": ""
+          }
+        ],
+        "Indexes": [
+          {
+            "Name": "tc_course",
+            "Fields": [
+              {
+                "Name": "course_id",
+                "KeyLength": 0,
+                "Order": "ASC"
+              }
+            ],
+            "Online": false,
+            "Type": "NORMAL",
+            "Method": "BTREE",
+            "KeyBlockSize": 0,
+            "Parser": "",
+            "Comment": "",
+            "Algorithm": "",
+            "Lock": ""
+          }
+        ],
+        "ForeignKeys": [
+          {
+            "Name": "tc_course",
+            "Fields": [
+              "course_id"
+            ],
+            "ReferenceSchema": "db_student_score",
+            "ReferenceTable": "course",
+            "ReferenceFields": [
+              "id"
+            ],
+            "OnDelete": "RESTRICT",
+            "OnUpdate": "CASCADE",
+            "SourceCardinality": "ZeroOrManyRelationship",
+            "TargetCardinality": "OneAndOnlyOneRelationship"
+          }
+        ],
+        "PrimaryKey": {
+          "Name": "",
+          "Fields": [
+            {
+              "Name": "id",
+              "KeyLength": 0,
+              "Order": "ASC"
+            }
+          ],
+          "IndexMethod": "BTREE",
+          "Comment": ""
+        },
+        "Engine": "InnoDB",
+        "AutoIncrement": 29,
+        "Tablespace": "",
+        "Storage": "",
+        "Union": "",
+        "CharacterSet": "utf8mb3",
+        "Checksum": false,
+        "Collation": "utf8mb3_general_ci",
+        "Comment": "",
+        "Compression": "",
+        "Connection": "",
+        "DataDirectory": "",
+        "DelayKeyWrite": false,
+        "Encryption": false,
+        "IndexDirectory": "",
+        "InsertMethod": "",
+        "RowFormat": "DYNAMIC",
+        "StatsAutoRecalc": "",
+        "StatsPersistent": "",
+        "StatsSamplePages": 0,
+        "AVGRowLength": 0,
+        "MaxRows": 0,
+        "MinRows": 0,
+        "PackKeys": "",
+        "KeyBlockSize": 0,
+        "PartitionBy": "",
+        "PartitionByExpr": "",
+        "Partitions": 0,
+        "SubPartitionBy": "",
+        "SubPartitionByExpr": "",
+        "SubPartitions": 0,
+        "CreateOptions": "row_format=DYNAMIC",
+        "CreateTime": "2026-04-30 22:58:27",
+        "CheckTime": "",
+        "DataFree": 0,
+        "DataLength": 16384,
+        "IndexLength": 16384,
+        "MaxDataLength": 0,
+        "PageCheckSum": false,
+        "Rows": 25,
+        "Transactional": false,
+        "UpdateTime": ""
+      },
+      {
+        "_VERSION_": "17.1.0002"
+      },
+      {
+        "_VERSION_": "17.2.0000",
+        "ModelOption": {
+          "DimensionalRole": "Unknown",
+          "DataVaultComponent": "Unknown"
+        }
+      }
+    ],
+    "9821a05d-1720-4832-9375-b8b53eb538e2": [
+      {
+        "_META_": true,
+        "_VERSION_": "",
+        "ObjectName": "profession",
+        "ObjectTypeID": "Table_MYSQL",
+        "ObjectTypeDisplayName": "Table_MYSQL",
+        "ObjectVersion": "17.2.0000",
+        "ResourceUUIDs": [],
+        "ChildObjectUUIDs": []
+      },
+      {
+        "_VERSION_": "17.0.0000",
+        "Fields": [
+          {
+            "Name": "id",
+            "Type": "int",
+            "Length": -2147483648,
+            "Decimals": -2147483648,
+            "IsUnsigned": false,
+            "IsZeroFill": false,
+            "SetEnumValues": "",
+            "IsBinary": false,
+            "Charset": "",
+            "Collation": "",
+            "IsNullable": false,
+            "DefaultType": "None",
+            "DefaultValue": "",
+            "IsOnUpdateCurrentTimestamp": false,
+            "IsAutoInc": true,
+            "Comment": "",
+            "ColumnFormat": "",
+            "Storage": "",
+            "IsVirtual": false,
+            "IsGeneratedAlways": false,
+            "VirtualExpr": "",
+            "VirtualType": ""
+          },
+          {
+            "Name": "name",
+            "Type": "varchar",
+            "Length": 50,
+            "Decimals": -2147483648,
+            "IsUnsigned": false,
+            "IsZeroFill": false,
+            "SetEnumValues": "",
+            "IsBinary": false,
+            "Charset": "utf8mb3",
+            "Collation": "utf8mb3_general_ci",
+            "IsNullable": false,
+            "DefaultType": "None",
+            "DefaultValue": "",
+            "IsOnUpdateCurrentTimestamp": false,
+            "IsAutoInc": false,
+            "Comment": "",
+            "ColumnFormat": "",
+            "Storage": "",
+            "IsVirtual": false,
+            "IsGeneratedAlways": false,
+            "VirtualExpr": "",
+            "VirtualType": ""
+          }
+        ],
+        "PrimaryKey": {
+          "Name": "",
+          "Fields": [
+            {
+              "Name": "id",
+              "KeyLength": 0,
+              "Order": "ASC"
+            }
+          ],
+          "IndexMethod": "BTREE",
+          "Comment": ""
+        },
+        "Engine": "InnoDB",
+        "AutoIncrement": 13,
+        "Tablespace": "",
+        "Storage": "",
+        "Union": "",
+        "CharacterSet": "utf8mb3",
+        "Checksum": false,
+        "Collation": "utf8mb3_general_ci",
+        "Comment": "",
+        "Compression": "",
+        "Connection": "",
+        "DataDirectory": "",
+        "DelayKeyWrite": false,
+        "Encryption": false,
+        "IndexDirectory": "",
+        "InsertMethod": "",
+        "RowFormat": "DYNAMIC",
+        "StatsAutoRecalc": "",
+        "StatsPersistent": "",
+        "StatsSamplePages": 0,
+        "AVGRowLength": 0,
+        "MaxRows": 0,
+        "MinRows": 0,
+        "PackKeys": "",
+        "KeyBlockSize": 0,
+        "PartitionBy": "",
+        "PartitionByExpr": "",
+        "Partitions": 0,
+        "SubPartitionBy": "",
+        "SubPartitionByExpr": "",
+        "SubPartitions": 0,
+        "CreateOptions": "row_format=DYNAMIC",
+        "CreateTime": "2026-04-28 23:14:29",
+        "CheckTime": "",
+        "DataFree": 0,
+        "DataLength": 16384,
+        "IndexLength": 0,
+        "MaxDataLength": 0,
+        "PageCheckSum": false,
+        "Rows": 10,
+        "Transactional": false,
+        "UpdateTime": ""
+      },
+      {
+        "_VERSION_": "17.1.0002"
+      },
+      {
+        "_VERSION_": "17.2.0000",
+        "ModelOption": {
+          "DimensionalRole": "Unknown",
+          "DataVaultComponent": "Unknown"
+        }
+      }
+    ],
+    "7d7e7a05-bfd7-40f0-989e-19b92b05324f": [
+      {
+        "_META_": true,
+        "_VERSION_": "",
+        "ObjectName": "Diagram - student-score",
+        "ObjectTypeID": "Diagram",
+        "ObjectTypeDisplayName": "Diagram",
+        "ObjectVersion": "17.2.0000",
+        "ResourceUUIDs": [],
+        "ChildObjectUUIDs": [
+          "0bc964ec-db24-4555-8d55-e84705107aae"
+        ]
+      },
+      {
+        "_VERSION_": "17.0.0000",
+        "Name": "Diagram - student-score",
+        "DefaultModel": "7157bb22-6a7b-4aa5-bb15-26c7e2baafbf",
+        "CreateTime": 1777645153,
+        "ModifyTime": 1777645348
+      },
+      {
+        "_VERSION_": "17.2.0000",
+        "Remarks": ""
+      }
+    ],
+    "5408e03d-f51e-4ab6-a49e-8ad7aa746815": [
+      {
+        "_META_": true,
+        "_VERSION_": "",
+        "ObjectName": "student",
+        "ObjectTypeID": "Table_MYSQL",
+        "ObjectTypeDisplayName": "Table_MYSQL",
+        "ObjectVersion": "17.2.0000",
+        "ResourceUUIDs": [],
+        "ChildObjectUUIDs": []
+      },
+      {
+        "_VERSION_": "17.0.0000",
+        "Fields": [
+          {
+            "Name": "id",
+            "Type": "varchar",
+            "Length": 50,
+            "Decimals": -2147483648,
+            "IsUnsigned": false,
+            "IsZeroFill": false,
+            "SetEnumValues": "",
+            "IsBinary": false,
+            "Charset": "utf8mb3",
+            "Collation": "utf8mb3_general_ci",
+            "IsNullable": false,
+            "DefaultType": "None",
+            "DefaultValue": "",
+            "IsOnUpdateCurrentTimestamp": false,
+            "IsAutoInc": false,
+            "Comment": "",
+            "ColumnFormat": "",
+            "Storage": "",
+            "IsVirtual": false,
+            "IsGeneratedAlways": false,
+            "VirtualExpr": "",
+            "VirtualType": ""
+          },
+          {
+            "Name": "username",
+            "Type": "varchar",
+            "Length": 50,
+            "Decimals": -2147483648,
+            "IsUnsigned": false,
+            "IsZeroFill": false,
+            "SetEnumValues": "",
+            "IsBinary": false,
+            "Charset": "utf8mb3",
+            "Collation": "utf8mb3_general_ci",
+            "IsNullable": false,
+            "DefaultType": "Empty",
+            "DefaultValue": "",
+            "IsOnUpdateCurrentTimestamp": false,
+            "IsAutoInc": false,
+            "Comment": "",
+            "ColumnFormat": "",
+            "Storage": "",
+            "IsVirtual": false,
+            "IsGeneratedAlways": false,
+            "VirtualExpr": "",
+            "VirtualType": ""
+          },
+          {
+            "Name": "password",
+            "Type": "varchar",
+            "Length": 255,
+            "Decimals": -2147483648,
+            "IsUnsigned": false,
+            "IsZeroFill": false,
+            "SetEnumValues": "",
+            "IsBinary": false,
+            "Charset": "utf8mb3",
+            "Collation": "utf8mb3_general_ci",
+            "IsNullable": false,
+            "DefaultType": "Empty",
+            "DefaultValue": "",
+            "IsOnUpdateCurrentTimestamp": false,
+            "IsAutoInc": false,
+            "Comment": "",
+            "ColumnFormat": "",
+            "Storage": "",
+            "IsVirtual": false,
+            "IsGeneratedAlways": false,
+            "VirtualExpr": "",
+            "VirtualType": ""
+          },
+          {
+            "Name": "real_name",
+            "Type": "varchar",
+            "Length": 50,
+            "Decimals": -2147483648,
+            "IsUnsigned": false,
+            "IsZeroFill": false,
+            "SetEnumValues": "",
+            "IsBinary": false,
+            "Charset": "utf8mb3",
+            "Collation": "utf8mb3_general_ci",
+            "IsNullable": false,
+            "DefaultType": "Empty",
+            "DefaultValue": "",
+            "IsOnUpdateCurrentTimestamp": false,
+            "IsAutoInc": false,
+            "Comment": "",
+            "ColumnFormat": "",
+            "Storage": "",
+            "IsVirtual": false,
+            "IsGeneratedAlways": false,
+            "VirtualExpr": "",
+            "VirtualType": ""
+          },
+          {
+            "Name": "level",
+            "Type": "tinyint",
+            "Length": -2147483648,
+            "Decimals": -2147483648,
+            "IsUnsigned": false,
+            "IsZeroFill": false,
+            "SetEnumValues": "",
+            "IsBinary": false,
+            "Charset": "",
+            "Collation": "",
+            "IsNullable": false,
+            "DefaultType": "Others",
+            "DefaultValue": "2",
+            "IsOnUpdateCurrentTimestamp": false,
+            "IsAutoInc": false,
+            "Comment": "",
+            "ColumnFormat": "",
+            "Storage": "",
+            "IsVirtual": false,
+            "IsGeneratedAlways": false,
+            "VirtualExpr": "",
+            "VirtualType": ""
+          },
+          {
+            "Name": "school",
+            "Type": "varchar",
+            "Length": 50,
+            "Decimals": -2147483648,
+            "IsUnsigned": false,
+            "IsZeroFill": false,
+            "SetEnumValues": "",
+            "IsBinary": false,
+            "Charset": "utf8mb3",
+            "Collation": "utf8mb3_general_ci",
+            "IsNullable": false,
+            "DefaultType": "Empty",
+            "DefaultValue": "",
+            "IsOnUpdateCurrentTimestamp": false,
+            "IsAutoInc": false,
+            "Comment": "",
+            "ColumnFormat": "",
+            "Storage": "",
+            "IsVirtual": false,
+            "IsGeneratedAlways": false,
+            "VirtualExpr": "",
+            "VirtualType": ""
+          },
+          {
+            "Name": "admission_time",
+            "Type": "varchar",
+            "Length": 50,
+            "Decimals": -2147483648,
+            "IsUnsigned": false,
+            "IsZeroFill": false,
+            "SetEnumValues": "",
+            "IsBinary": false,
+            "Charset": "utf8mb3",
+            "Collation": "utf8mb3_general_ci",
+            "IsNullable": false,
+            "DefaultType": "Empty",
+            "DefaultValue": "",
+            "IsOnUpdateCurrentTimestamp": false,
+            "IsAutoInc": false,
+            "Comment": "",
+            "ColumnFormat": "",
+            "Storage": "",
+            "IsVirtual": false,
+            "IsGeneratedAlways": false,
+            "VirtualExpr": "",
+            "VirtualType": ""
+          },
+          {
+            "Name": "email",
+            "Type": "varchar",
+            "Length": 50,
+            "Decimals": -2147483648,
+            "IsUnsigned": false,
+            "IsZeroFill": false,
+            "SetEnumValues": "",
+            "IsBinary": false,
+            "Charset": "utf8mb3",
+            "Collation": "utf8mb3_general_ci",
+            "IsNullable": false,
+            "DefaultType": "Others",
+            "DefaultValue": "'0'",
+            "IsOnUpdateCurrentTimestamp": false,
+            "IsAutoInc": false,
+            "Comment": "",
+            "ColumnFormat": "",
+            "Storage": "",
+            "IsVirtual": false,
+            "IsGeneratedAlways": false,
+            "VirtualExpr": "",
+            "VirtualType": ""
+          },
+          {
+            "Name": "profession",
+            "Type": "varchar",
+            "Length": 50,
+            "Decimals": -2147483648,
+            "IsUnsigned": false,
+            "IsZeroFill": false,
+            "SetEnumValues": "",
+            "IsBinary": false,
+            "Charset": "utf8mb3",
+            "Collation": "utf8mb3_general_ci",
+            "IsNullable": false,
+            "DefaultType": "Empty",
+            "DefaultValue": "",
+            "IsOnUpdateCurrentTimestamp": false,
+            "IsAutoInc": false,
+            "Comment": "",
+            "ColumnFormat": "",
+            "Storage": "",
+            "IsVirtual": false,
+            "IsGeneratedAlways": false,
+            "VirtualExpr": "",
+            "VirtualType": ""
+          },
+          {
+            "Name": "grade",
+            "Type": "int",
+            "Length": -2147483648,
+            "Decimals": -2147483648,
+            "IsUnsigned": false,
+            "IsZeroFill": false,
+            "SetEnumValues": "",
+            "IsBinary": false,
+            "Charset": "",
+            "Collation": "",
+            "IsNullable": false,
+            "DefaultType": "None",
+            "DefaultValue": "",
+            "IsOnUpdateCurrentTimestamp": false,
+            "IsAutoInc": false,
+            "Comment": "",
+            "ColumnFormat": "",
+            "Storage": "",
+            "IsVirtual": false,
+            "IsGeneratedAlways": false,
+            "VirtualExpr": "",
+            "VirtualType": ""
+          },
+          {
+            "Name": "phone",
+            "Type": "varchar",
+            "Length": 50,
+            "Decimals": -2147483648,
+            "IsUnsigned": false,
+            "IsZeroFill": false,
+            "SetEnumValues": "",
+            "IsBinary": false,
+            "Charset": "utf8mb3",
+            "Collation": "utf8mb3_general_ci",
+            "IsNullable": false,
+            "DefaultType": "Empty",
+            "DefaultValue": "",
+            "IsOnUpdateCurrentTimestamp": false,
+            "IsAutoInc": false,
+            "Comment": "",
+            "ColumnFormat": "",
+            "Storage": "",
+            "IsVirtual": false,
+            "IsGeneratedAlways": false,
+            "VirtualExpr": "",
+            "VirtualType": ""
+          },
+          {
+            "Name": "sex",
+            "Type": "tinyint",
+            "Length": -2147483648,
+            "Decimals": -2147483648,
+            "IsUnsigned": false,
+            "IsZeroFill": false,
+            "SetEnumValues": "",
+            "IsBinary": false,
+            "Charset": "",
+            "Collation": "",
+            "IsNullable": false,
+            "DefaultType": "Others",
+            "DefaultValue": "0",
+            "IsOnUpdateCurrentTimestamp": false,
+            "IsAutoInc": false,
+            "Comment": "",
+            "ColumnFormat": "",
+            "Storage": "",
+            "IsVirtual": false,
+            "IsGeneratedAlways": false,
+            "VirtualExpr": "",
+            "VirtualType": ""
+          },
+          {
+            "Name": "create_time",
+            "Type": "timestamp",
+            "Length": -2147483648,
+            "Decimals": -2147483648,
+            "IsUnsigned": false,
+            "IsZeroFill": false,
+            "SetEnumValues": "",
+            "IsBinary": false,
+            "Charset": "",
+            "Collation": "",
+            "IsNullable": false,
+            "DefaultType": "Others",
+            "DefaultValue": "CURRENT_TIMESTAMP",
+            "IsOnUpdateCurrentTimestamp": false,
+            "IsAutoInc": false,
+            "Comment": "创建时间",
+            "ColumnFormat": "",
+            "Storage": "",
+            "IsVirtual": false,
+            "IsGeneratedAlways": false,
+            "VirtualExpr": "",
+            "VirtualType": ""
+          }
+        ],
+        "PrimaryKey": {
+          "Name": "",
+          "Fields": [
+            {
+              "Name": "id",
+              "KeyLength": 0,
+              "Order": "ASC"
+            }
+          ],
+          "IndexMethod": "BTREE",
+          "Comment": ""
+        },
+        "Engine": "InnoDB",
+        "AutoIncrement": 0,
+        "Tablespace": "",
+        "Storage": "",
+        "Union": "",
+        "CharacterSet": "utf8mb3",
+        "Checksum": false,
+        "Collation": "utf8mb3_general_ci",
+        "Comment": "",
+        "Compression": "",
+        "Connection": "",
+        "DataDirectory": "",
+        "DelayKeyWrite": false,
+        "Encryption": false,
+        "IndexDirectory": "",
+        "InsertMethod": "",
+        "RowFormat": "DYNAMIC",
+        "StatsAutoRecalc": "",
+        "StatsPersistent": "",
+        "StatsSamplePages": 0,
+        "AVGRowLength": 0,
+        "MaxRows": 0,
+        "MinRows": 0,
+        "PackKeys": "",
+        "KeyBlockSize": 0,
+        "PartitionBy": "",
+        "PartitionByExpr": "",
+        "Partitions": 0,
+        "SubPartitionBy": "",
+        "SubPartitionByExpr": "",
+        "SubPartitions": 0,
+        "CreateOptions": "row_format=DYNAMIC",
+        "CreateTime": "2026-04-28 23:14:29",
+        "CheckTime": "",
+        "DataFree": 0,
+        "DataLength": 114688,
+        "IndexLength": 0,
+        "MaxDataLength": 0,
+        "PageCheckSum": false,
+        "Rows": 602,
+        "Transactional": false,
+        "UpdateTime": ""
+      },
+      {
+        "_VERSION_": "17.1.0002"
+      },
+      {
+        "_VERSION_": "17.2.0000",
+        "ModelOption": {
+          "DimensionalRole": "Unknown",
+          "DataVaultComponent": "Unknown"
+        }
+      }
+    ],
+    "a222126a-480e-471c-8b3f-d2609ed5228c": [
+      {
+        "_META_": true,
+        "_VERSION_": "",
+        "ObjectName": "student_course",
+        "ObjectTypeID": "Table_MYSQL",
+        "ObjectTypeDisplayName": "Table_MYSQL",
+        "ObjectVersion": "17.2.0000",
+        "ResourceUUIDs": [],
+        "ChildObjectUUIDs": []
+      },
+      {
+        "_VERSION_": "17.0.0000",
+        "Fields": [
+          {
+            "Name": "id",
+            "Type": "int",
+            "Length": -2147483648,
+            "Decimals": -2147483648,
+            "IsUnsigned": false,
+            "IsZeroFill": false,
+            "SetEnumValues": "",
+            "IsBinary": false,
+            "Charset": "",
+            "Collation": "",
+            "IsNullable": false,
+            "DefaultType": "None",
+            "DefaultValue": "",
+            "IsOnUpdateCurrentTimestamp": false,
+            "IsAutoInc": true,
+            "Comment": "",
+            "ColumnFormat": "",
+            "Storage": "",
+            "IsVirtual": false,
+            "IsGeneratedAlways": false,
+            "VirtualExpr": "",
+            "VirtualType": ""
+          },
+          {
+            "Name": "student_id",
+            "Type": "varchar",
+            "Length": 255,
+            "Decimals": -2147483648,
+            "IsUnsigned": false,
+            "IsZeroFill": false,
+            "SetEnumValues": "",
+            "IsBinary": false,
+            "Charset": "utf8mb3",
+            "Collation": "utf8mb3_general_ci",
+            "IsNullable": false,
+            "DefaultType": "None",
+            "DefaultValue": "",
+            "IsOnUpdateCurrentTimestamp": false,
+            "IsAutoInc": false,
+            "Comment": "",
+            "ColumnFormat": "",
+            "Storage": "",
+            "IsVirtual": false,
+            "IsGeneratedAlways": false,
+            "VirtualExpr": "",
+            "VirtualType": ""
+          },
+          {
+            "Name": "course_id",
+            "Type": "varchar",
+            "Length": 255,
+            "Decimals": -2147483648,
+            "IsUnsigned": false,
+            "IsZeroFill": false,
+            "SetEnumValues": "",
+            "IsBinary": false,
+            "Charset": "utf8mb3",
+            "Collation": "utf8mb3_general_ci",
+            "IsNullable": false,
+            "DefaultType": "None",
+            "DefaultValue": "",
+            "IsOnUpdateCurrentTimestamp": false,
+            "IsAutoInc": false,
+            "Comment": "",
+            "ColumnFormat": "",
+            "Storage": "",
+            "IsVirtual": false,
+            "IsGeneratedAlways": false,
+            "VirtualExpr": "",
+            "VirtualType": ""
+          },
+          {
+            "Name": "name",
+            "Type": "varchar",
+            "Length": 255,
+            "Decimals": -2147483648,
+            "IsUnsigned": false,
+            "IsZeroFill": false,
+            "SetEnumValues": "",
+            "IsBinary": false,
+            "Charset": "utf8mb3",
+            "Collation": "utf8mb3_general_ci",
+            "IsNullable": false,
+            "DefaultType": "None",
+            "DefaultValue": "",
+            "IsOnUpdateCurrentTimestamp": false,
+            "IsAutoInc": false,
+            "Comment": "",
+            "ColumnFormat": "",
+            "Storage": "",
+            "IsVirtual": false,
+            "IsGeneratedAlways": false,
+            "VirtualExpr": "",
+            "VirtualType": ""
+          },
+          {
+            "Name": "score",
+            "Type": "varchar",
+            "Length": 11,
+            "Decimals": -2147483648,
+            "IsUnsigned": false,
+            "IsZeroFill": false,
+            "SetEnumValues": "",
+            "IsBinary": false,
+            "Charset": "utf8mb3",
+            "Collation": "utf8mb3_general_ci",
+            "IsNullable": false,
+            "DefaultType": "None",
+            "DefaultValue": "",
+            "IsOnUpdateCurrentTimestamp": false,
+            "IsAutoInc": false,
+            "Comment": "",
+            "ColumnFormat": "",
+            "Storage": "",
+            "IsVirtual": false,
+            "IsGeneratedAlways": false,
+            "VirtualExpr": "",
+            "VirtualType": ""
+          },
+          {
+            "Name": "point",
+            "Type": "decimal",
+            "Length": 4,
+            "Decimals": 2,
+            "IsUnsigned": false,
+            "IsZeroFill": false,
+            "SetEnumValues": "",
+            "IsBinary": false,
+            "Charset": "",
+            "Collation": "",
+            "IsNullable": false,
+            "DefaultType": "None",
+            "DefaultValue": "",
+            "IsOnUpdateCurrentTimestamp": false,
+            "IsAutoInc": false,
+            "Comment": "",
+            "ColumnFormat": "",
+            "Storage": "",
+            "IsVirtual": false,
+            "IsGeneratedAlways": false,
+            "VirtualExpr": "",
+            "VirtualType": ""
+          },
+          {
+            "Name": "credits",
+            "Type": "decimal",
+            "Length": 4,
+            "Decimals": 2,
+            "IsUnsigned": false,
+            "IsZeroFill": false,
+            "SetEnumValues": "",
+            "IsBinary": false,
+            "Charset": "",
+            "Collation": "",
+            "IsNullable": false,
+            "DefaultType": "None",
+            "DefaultValue": "",
+            "IsOnUpdateCurrentTimestamp": false,
+            "IsAutoInc": false,
+            "Comment": "",
+            "ColumnFormat": "",
+            "Storage": "",
+            "IsVirtual": false,
+            "IsGeneratedAlways": false,
+            "VirtualExpr": "",
+            "VirtualType": ""
+          },
+          {
+            "Name": "term",
+            "Type": "tinyint",
+            "Length": -2147483648,
+            "Decimals": -2147483648,
+            "IsUnsigned": false,
+            "IsZeroFill": false,
+            "SetEnumValues": "",
+            "IsBinary": false,
+            "Charset": "",
+            "Collation": "",
+            "IsNullable": false,
+            "DefaultType": "None",
+            "DefaultValue": "",
+            "IsOnUpdateCurrentTimestamp": false,
+            "IsAutoInc": false,
+            "Comment": "",
+            "ColumnFormat": "",
+            "Storage": "",
+            "IsVirtual": false,
+            "IsGeneratedAlways": false,
+            "VirtualExpr": "",
+            "VirtualType": ""
+          },
+          {
+            "Name": "year",
+            "Type": "int",
+            "Length": -2147483648,
+            "Decimals": -2147483648,
+            "IsUnsigned": false,
+            "IsZeroFill": false,
+            "SetEnumValues": "",
+            "IsBinary": false,
+            "Charset": "",
+            "Collation": "",
+            "IsNullable": false,
+            "DefaultType": "None",
+            "DefaultValue": "",
+            "IsOnUpdateCurrentTimestamp": false,
+            "IsAutoInc": false,
+            "Comment": "",
+            "ColumnFormat": "",
+            "Storage": "",
+            "IsVirtual": false,
+            "IsGeneratedAlways": false,
+            "VirtualExpr": "",
+            "VirtualType": ""
+          }
+        ],
+        "Indexes": [
+          {
+            "Name": "sc_student",
+            "Fields": [
+              {
+                "Name": "student_id",
+                "KeyLength": 0,
+                "Order": "ASC"
+              }
+            ],
+            "Online": false,
+            "Type": "NORMAL",
+            "Method": "BTREE",
+            "KeyBlockSize": 0,
+            "Parser": "",
+            "Comment": "",
+            "Algorithm": "",
+            "Lock": ""
+          },
+          {
+            "Name": "sc_course",
+            "Fields": [
+              {
+                "Name": "course_id",
+                "KeyLength": 0,
+                "Order": "ASC"
+              }
+            ],
+            "Online": false,
+            "Type": "NORMAL",
+            "Method": "BTREE",
+            "KeyBlockSize": 0,
+            "Parser": "",
+            "Comment": "",
+            "Algorithm": "",
+            "Lock": ""
+          }
+        ],
+        "ForeignKeys": [
+          {
+            "Name": "sc_course",
+            "Fields": [
+              "course_id"
+            ],
+            "ReferenceSchema": "db_student_score",
+            "ReferenceTable": "course",
+            "ReferenceFields": [
+              "id"
+            ],
+            "OnDelete": "RESTRICT",
+            "OnUpdate": "CASCADE",
+            "SourceCardinality": "ZeroOrManyRelationship",
+            "TargetCardinality": "OneAndOnlyOneRelationship"
+          },
+          {
+            "Name": "sc_student",
+            "Fields": [
+              "student_id"
+            ],
+            "ReferenceSchema": "db_student_score",
+            "ReferenceTable": "student",
+            "ReferenceFields": [
+              "id"
+            ],
+            "OnDelete": "RESTRICT",
+            "OnUpdate": "CASCADE",
+            "SourceCardinality": "ZeroOrManyRelationship",
+            "TargetCardinality": "OneAndOnlyOneRelationship"
+          }
+        ],
+        "PrimaryKey": {
+          "Name": "",
+          "Fields": [
+            {
+              "Name": "id",
+              "KeyLength": 0,
+              "Order": "ASC"
+            }
+          ],
+          "IndexMethod": "BTREE",
+          "Comment": ""
+        },
+        "Engine": "InnoDB",
+        "AutoIncrement": 475,
+        "Tablespace": "",
+        "Storage": "",
+        "Union": "",
+        "CharacterSet": "utf8mb3",
+        "Checksum": false,
+        "Collation": "utf8mb3_general_ci",
+        "Comment": "",
+        "Compression": "",
+        "Connection": "",
+        "DataDirectory": "",
+        "DelayKeyWrite": false,
+        "Encryption": false,
+        "IndexDirectory": "",
+        "InsertMethod": "",
+        "RowFormat": "DYNAMIC",
+        "StatsAutoRecalc": "",
+        "StatsPersistent": "",
+        "StatsSamplePages": 0,
+        "AVGRowLength": 0,
+        "MaxRows": 0,
+        "MinRows": 0,
+        "PackKeys": "",
+        "KeyBlockSize": 0,
+        "PartitionBy": "",
+        "PartitionByExpr": "",
+        "Partitions": 0,
+        "SubPartitionBy": "",
+        "SubPartitionByExpr": "",
+        "SubPartitions": 0,
+        "CreateOptions": "row_format=DYNAMIC",
+        "CreateTime": "2026-04-30 22:53:00",
+        "CheckTime": "",
+        "DataFree": 0,
+        "DataLength": 65536,
+        "IndexLength": 32768,
+        "MaxDataLength": 0,
+        "PageCheckSum": false,
+        "Rows": 474,
+        "Transactional": false,
+        "UpdateTime": ""
+      },
+      {
+        "_VERSION_": "17.1.0002"
+      },
+      {
+        "_VERSION_": "17.2.0000",
+        "ModelOption": {
+          "DimensionalRole": "Unknown",
+          "DataVaultComponent": "Unknown"
+        }
+      }
+    ],
+    "b500fdc0-f7dd-49b4-a27f-c6e13f692cde": [
+      {
+        "_META_": true,
+        "_VERSION_": "",
+        "ObjectName": "teacher",
+        "ObjectTypeID": "Table_MYSQL",
+        "ObjectTypeDisplayName": "Table_MYSQL",
+        "ObjectVersion": "17.2.0000",
+        "ResourceUUIDs": [],
+        "ChildObjectUUIDs": []
+      },
+      {
+        "_VERSION_": "17.0.0000",
+        "Fields": [
+          {
+            "Name": "id",
+            "Type": "int",
+            "Length": -2147483648,
+            "Decimals": -2147483648,
+            "IsUnsigned": false,
+            "IsZeroFill": false,
+            "SetEnumValues": "",
+            "IsBinary": false,
+            "Charset": "",
+            "Collation": "",
+            "IsNullable": false,
+            "DefaultType": "None",
+            "DefaultValue": "",
+            "IsOnUpdateCurrentTimestamp": false,
+            "IsAutoInc": true,
+            "Comment": "",
+            "ColumnFormat": "",
+            "Storage": "",
+            "IsVirtual": false,
+            "IsGeneratedAlways": false,
+            "VirtualExpr": "",
+            "VirtualType": ""
+          },
+          {
+            "Name": "username",
+            "Type": "varchar",
+            "Length": 50,
+            "Decimals": -2147483648,
+            "IsUnsigned": false,
+            "IsZeroFill": false,
+            "SetEnumValues": "",
+            "IsBinary": false,
+            "Charset": "utf8mb3",
+            "Collation": "utf8mb3_general_ci",
+            "IsNullable": false,
+            "DefaultType": "Empty",
+            "DefaultValue": "",
+            "IsOnUpdateCurrentTimestamp": false,
+            "IsAutoInc": false,
+            "Comment": "",
+            "ColumnFormat": "",
+            "Storage": "",
+            "IsVirtual": false,
+            "IsGeneratedAlways": false,
+            "VirtualExpr": "",
+            "VirtualType": ""
+          },
+          {
+            "Name": "password",
+            "Type": "varchar",
+            "Length": 255,
+            "Decimals": -2147483648,
+            "IsUnsigned": false,
+            "IsZeroFill": false,
+            "SetEnumValues": "",
+            "IsBinary": false,
+            "Charset": "utf8mb3",
+            "Collation": "utf8mb3_general_ci",
+            "IsNullable": false,
+            "DefaultType": "Empty",
+            "DefaultValue": "",
+            "IsOnUpdateCurrentTimestamp": false,
+            "IsAutoInc": false,
+            "Comment": "",
+            "ColumnFormat": "",
+            "Storage": "",
+            "IsVirtual": false,
+            "IsGeneratedAlways": false,
+            "VirtualExpr": "",
+            "VirtualType": ""
+          },
+          {
+            "Name": "real_name",
+            "Type": "varchar",
+            "Length": 50,
+            "Decimals": -2147483648,
+            "IsUnsigned": false,
+            "IsZeroFill": false,
+            "SetEnumValues": "",
+            "IsBinary": false,
+            "Charset": "utf8mb3",
+            "Collation": "utf8mb3_general_ci",
+            "IsNullable": false,
+            "DefaultType": "Empty",
+            "DefaultValue": "",
+            "IsOnUpdateCurrentTimestamp": false,
+            "IsAutoInc": false,
+            "Comment": "",
+            "ColumnFormat": "",
+            "Storage": "",
+            "IsVirtual": false,
+            "IsGeneratedAlways": false,
+            "VirtualExpr": "",
+            "VirtualType": ""
+          },
+          {
+            "Name": "level",
+            "Type": "tinyint",
+            "Length": -2147483648,
+            "Decimals": -2147483648,
+            "IsUnsigned": false,
+            "IsZeroFill": false,
+            "SetEnumValues": "",
+            "IsBinary": false,
+            "Charset": "",
+            "Collation": "",
+            "IsNullable": false,
+            "DefaultType": "Others",
+            "DefaultValue": "1",
+            "IsOnUpdateCurrentTimestamp": false,
+            "IsAutoInc": false,
+            "Comment": "",
+            "ColumnFormat": "",
+            "Storage": "",
+            "IsVirtual": false,
+            "IsGeneratedAlways": false,
+            "VirtualExpr": "",
+            "VirtualType": ""
+          },
+          {
+            "Name": "school",
+            "Type": "varchar",
+            "Length": 50,
+            "Decimals": -2147483648,
+            "IsUnsigned": false,
+            "IsZeroFill": false,
+            "SetEnumValues": "",
+            "IsBinary": false,
+            "Charset": "utf8mb3",
+            "Collation": "utf8mb3_general_ci",
+            "IsNullable": false,
+            "DefaultType": "Empty",
+            "DefaultValue": "",
+            "IsOnUpdateCurrentTimestamp": false,
+            "IsAutoInc": false,
+            "Comment": "",
+            "ColumnFormat": "",
+            "Storage": "",
+            "IsVirtual": false,
+            "IsGeneratedAlways": false,
+            "VirtualExpr": "",
+            "VirtualType": ""
+          },
+          {
+            "Name": "email",
+            "Type": "varchar",
+            "Length": 50,
+            "Decimals": -2147483648,
+            "IsUnsigned": false,
+            "IsZeroFill": false,
+            "SetEnumValues": "",
+            "IsBinary": false,
+            "Charset": "utf8mb3",
+            "Collation": "utf8mb3_general_ci",
+            "IsNullable": false,
+            "DefaultType": "Others",
+            "DefaultValue": "'0'",
+            "IsOnUpdateCurrentTimestamp": false,
+            "IsAutoInc": false,
+            "Comment": "",
+            "ColumnFormat": "",
+            "Storage": "",
+            "IsVirtual": false,
+            "IsGeneratedAlways": false,
+            "VirtualExpr": "",
+            "VirtualType": ""
+          },
+          {
+            "Name": "phone",
+            "Type": "varchar",
+            "Length": 50,
+            "Decimals": -2147483648,
+            "IsUnsigned": false,
+            "IsZeroFill": false,
+            "SetEnumValues": "",
+            "IsBinary": false,
+            "Charset": "utf8mb3",
+            "Collation": "utf8mb3_general_ci",
+            "IsNullable": false,
+            "DefaultType": "Empty",
+            "DefaultValue": "",
+            "IsOnUpdateCurrentTimestamp": false,
+            "IsAutoInc": false,
+            "Comment": "",
+            "ColumnFormat": "",
+            "Storage": "",
+            "IsVirtual": false,
+            "IsGeneratedAlways": false,
+            "VirtualExpr": "",
+            "VirtualType": ""
+          },
+          {
+            "Name": "sex",
+            "Type": "tinyint",
+            "Length": -2147483648,
+            "Decimals": -2147483648,
+            "IsUnsigned": false,
+            "IsZeroFill": false,
+            "SetEnumValues": "",
+            "IsBinary": false,
+            "Charset": "",
+            "Collation": "",
+            "IsNullable": false,
+            "DefaultType": "Others",
+            "DefaultValue": "0",
+            "IsOnUpdateCurrentTimestamp": false,
+            "IsAutoInc": false,
+            "Comment": "",
+            "ColumnFormat": "",
+            "Storage": "",
+            "IsVirtual": false,
+            "IsGeneratedAlways": false,
+            "VirtualExpr": "",
+            "VirtualType": ""
+          },
+          {
+            "Name": "create_time",
+            "Type": "timestamp",
+            "Length": -2147483648,
+            "Decimals": -2147483648,
+            "IsUnsigned": false,
+            "IsZeroFill": false,
+            "SetEnumValues": "",
+            "IsBinary": false,
+            "Charset": "",
+            "Collation": "",
+            "IsNullable": false,
+            "DefaultType": "Others",
+            "DefaultValue": "CURRENT_TIMESTAMP",
+            "IsOnUpdateCurrentTimestamp": false,
+            "IsAutoInc": false,
+            "Comment": "创建时间",
+            "ColumnFormat": "",
+            "Storage": "",
+            "IsVirtual": false,
+            "IsGeneratedAlways": false,
+            "VirtualExpr": "",
+            "VirtualType": ""
+          }
+        ],
+        "PrimaryKey": {
+          "Name": "",
+          "Fields": [
+            {
+              "Name": "id",
+              "KeyLength": 0,
+              "Order": "ASC"
+            }
+          ],
+          "IndexMethod": "BTREE",
+          "Comment": ""
+        },
+        "Engine": "InnoDB",
+        "AutoIncrement": 3890291,
+        "Tablespace": "",
+        "Storage": "",
+        "Union": "",
+        "CharacterSet": "utf8mb3",
+        "Checksum": false,
+        "Collation": "utf8mb3_general_ci",
+        "Comment": "",
+        "Compression": "",
+        "Connection": "",
+        "DataDirectory": "",
+        "DelayKeyWrite": false,
+        "Encryption": false,
+        "IndexDirectory": "",
+        "InsertMethod": "",
+        "RowFormat": "DYNAMIC",
+        "StatsAutoRecalc": "",
+        "StatsPersistent": "",
+        "StatsSamplePages": 0,
+        "AVGRowLength": 0,
+        "MaxRows": 0,
+        "MinRows": 0,
+        "PackKeys": "",
+        "KeyBlockSize": 0,
+        "PartitionBy": "",
+        "PartitionByExpr": "",
+        "Partitions": 0,
+        "SubPartitionBy": "",
+        "SubPartitionByExpr": "",
+        "SubPartitions": 0,
+        "CreateOptions": "row_format=DYNAMIC",
+        "CreateTime": "2026-04-28 23:14:30",
+        "CheckTime": "",
+        "DataFree": 0,
+        "DataLength": 16384,
+        "IndexLength": 0,
+        "MaxDataLength": 0,
+        "PageCheckSum": false,
+        "Rows": 1,
+        "Transactional": false,
+        "UpdateTime": ""
+      },
+      {
+        "_VERSION_": "17.1.0002"
+      },
+      {
+        "_VERSION_": "17.2.0000",
+        "ModelOption": {
+          "DimensionalRole": "Unknown",
+          "DataVaultComponent": "Unknown"
+        }
+      }
+    ],
+    "17604b0c-e2bc-4153-8bbd-fa1e80f5f7df": [
+      {
+        "_META_": true,
+        "_VERSION_": "",
+        "ObjectName": "timetable",
+        "ObjectTypeID": "Table_MYSQL",
+        "ObjectTypeDisplayName": "Table_MYSQL",
+        "ObjectVersion": "17.2.0000",
+        "ResourceUUIDs": [],
+        "ChildObjectUUIDs": []
+      },
+      {
+        "_VERSION_": "17.0.0000",
+        "Fields": [
+          {
+            "Name": "id",
+            "Type": "int",
+            "Length": -2147483648,
+            "Decimals": -2147483648,
+            "IsUnsigned": false,
+            "IsZeroFill": false,
+            "SetEnumValues": "",
+            "IsBinary": false,
+            "Charset": "",
+            "Collation": "",
+            "IsNullable": false,
+            "DefaultType": "None",
+            "DefaultValue": "",
+            "IsOnUpdateCurrentTimestamp": false,
+            "IsAutoInc": true,
+            "Comment": "",
+            "ColumnFormat": "",
+            "Storage": "",
+            "IsVirtual": false,
+            "IsGeneratedAlways": false,
+            "VirtualExpr": "",
+            "VirtualType": ""
+          },
+          {
+            "Name": "week_id",
+            "Type": "int",
+            "Length": -2147483648,
+            "Decimals": -2147483648,
+            "IsUnsigned": false,
+            "IsZeroFill": false,
+            "SetEnumValues": "",
+            "IsBinary": false,
+            "Charset": "",
+            "Collation": "",
+            "IsNullable": false,
+            "DefaultType": "None",
+            "DefaultValue": "",
+            "IsOnUpdateCurrentTimestamp": false,
+            "IsAutoInc": false,
+            "Comment": "",
+            "ColumnFormat": "",
+            "Storage": "",
+            "IsVirtual": false,
+            "IsGeneratedAlways": false,
+            "VirtualExpr": "",
+            "VirtualType": ""
+          },
+          {
+            "Name": "profession",
+            "Type": "varchar",
+            "Length": 50,
+            "Decimals": -2147483648,
+            "IsUnsigned": false,
+            "IsZeroFill": false,
+            "SetEnumValues": "",
+            "IsBinary": false,
+            "Charset": "utf8mb3",
+            "Collation": "utf8mb3_general_ci",
+            "IsNullable": false,
+            "DefaultType": "None",
+            "DefaultValue": "",
+            "IsOnUpdateCurrentTimestamp": false,
+            "IsAutoInc": false,
+            "Comment": "",
+            "ColumnFormat": "",
+            "Storage": "",
+            "IsVirtual": false,
+            "IsGeneratedAlways": false,
+            "VirtualExpr": "",
+            "VirtualType": ""
+          },
+          {
+            "Name": "grade",
+            "Type": "varchar",
+            "Length": 50,
+            "Decimals": -2147483648,
+            "IsUnsigned": false,
+            "IsZeroFill": false,
+            "SetEnumValues": "",
+            "IsBinary": false,
+            "Charset": "utf8mb3",
+            "Collation": "utf8mb3_general_ci",
+            "IsNullable": false,
+            "DefaultType": "None",
+            "DefaultValue": "",
+            "IsOnUpdateCurrentTimestamp": false,
+            "IsAutoInc": false,
+            "Comment": "",
+            "ColumnFormat": "",
+            "Storage": "",
+            "IsVirtual": false,
+            "IsGeneratedAlways": false,
+            "VirtualExpr": "",
+            "VirtualType": ""
+          },
+          {
+            "Name": "year",
+            "Type": "int",
+            "Length": -2147483648,
+            "Decimals": -2147483648,
+            "IsUnsigned": false,
+            "IsZeroFill": false,
+            "SetEnumValues": "",
+            "IsBinary": false,
+            "Charset": "",
+            "Collation": "",
+            "IsNullable": false,
+            "DefaultType": "None",
+            "DefaultValue": "",
+            "IsOnUpdateCurrentTimestamp": false,
+            "IsAutoInc": false,
+            "Comment": "",
+            "ColumnFormat": "",
+            "Storage": "",
+            "IsVirtual": false,
+            "IsGeneratedAlways": false,
+            "VirtualExpr": "",
+            "VirtualType": ""
+          },
+          {
+            "Name": "term",
+            "Type": "tinyint",
+            "Length": -2147483648,
+            "Decimals": -2147483648,
+            "IsUnsigned": false,
+            "IsZeroFill": false,
+            "SetEnumValues": "",
+            "IsBinary": false,
+            "Charset": "",
+            "Collation": "",
+            "IsNullable": false,
+            "DefaultType": "None",
+            "DefaultValue": "",
+            "IsOnUpdateCurrentTimestamp": false,
+            "IsAutoInc": false,
+            "Comment": "",
+            "ColumnFormat": "",
+            "Storage": "",
+            "IsVirtual": false,
+            "IsGeneratedAlways": false,
+            "VirtualExpr": "",
+            "VirtualType": ""
+          },
+          {
+            "Name": "week_num",
+            "Type": "int",
+            "Length": -2147483648,
+            "Decimals": -2147483648,
+            "IsUnsigned": false,
+            "IsZeroFill": false,
+            "SetEnumValues": "",
+            "IsBinary": false,
+            "Charset": "",
+            "Collation": "",
+            "IsNullable": true,
+            "DefaultType": "Null",
+            "DefaultValue": "",
+            "IsOnUpdateCurrentTimestamp": false,
+            "IsAutoInc": false,
+            "Comment": "周数",
+            "ColumnFormat": "",
+            "Storage": "",
+            "IsVirtual": false,
+            "IsGeneratedAlways": false,
+            "VirtualExpr": "",
+            "VirtualType": ""
+          }
+        ],
+        "PrimaryKey": {
+          "Name": "",
+          "Fields": [
+            {
+              "Name": "id",
+              "KeyLength": 0,
+              "Order": "ASC"
+            }
+          ],
+          "IndexMethod": "BTREE",
+          "Comment": ""
+        },
+        "Engine": "InnoDB",
+        "AutoIncrement": 41,
+        "Tablespace": "",
+        "Storage": "",
+        "Union": "",
+        "CharacterSet": "utf8mb3",
+        "Checksum": false,
+        "Collation": "utf8mb3_general_ci",
+        "Comment": "",
+        "Compression": "",
+        "Connection": "",
+        "DataDirectory": "",
+        "DelayKeyWrite": false,
+        "Encryption": false,
+        "IndexDirectory": "",
+        "InsertMethod": "",
+        "RowFormat": "DYNAMIC",
+        "StatsAutoRecalc": "",
+        "StatsPersistent": "",
+        "StatsSamplePages": 0,
+        "AVGRowLength": 0,
+        "MaxRows": 0,
+        "MinRows": 0,
+        "PackKeys": "",
+        "KeyBlockSize": 0,
+        "PartitionBy": "",
+        "PartitionByExpr": "",
+        "Partitions": 0,
+        "SubPartitionBy": "",
+        "SubPartitionByExpr": "",
+        "SubPartitions": 0,
+        "CreateOptions": "row_format=DYNAMIC",
+        "CreateTime": "2026-04-28 23:14:30",
+        "CheckTime": "",
+        "DataFree": 0,
+        "DataLength": 16384,
+        "IndexLength": 0,
+        "MaxDataLength": 0,
+        "PageCheckSum": false,
+        "Rows": 40,
+        "Transactional": false,
+        "UpdateTime": ""
+      },
+      {
+        "_VERSION_": "17.1.0002"
+      },
+      {
+        "_VERSION_": "17.2.0000",
+        "ModelOption": {
+          "DimensionalRole": "Unknown",
+          "DataVaultComponent": "Unknown"
+        }
+      }
+    ],
+    "7b740862-eb44-4c89-a38d-2e238d230bf8": [
+      {
+        "_META_": true,
+        "_VERSION_": "",
+        "ObjectName": "sc_course",
+        "ObjectTypeID": "MVDiagramShape_Relation",
+        "ObjectTypeDisplayName": "MVDiagramShape_Relation",
+        "ObjectVersion": "17.0.0000",
+        "ResourceUUIDs": [],
+        "ChildObjectUUIDs": []
+      },
+      {
+        "_VERSION_": "17.0.0000",
+        "LineCommon": {
+          "Vertices": [
+            {
+              "X": 0,
+              "Y": 0
+            },
+            {
+              "X": 0,
+              "Y": 20
+            }
+          ],
+          "Color": {
+            "R": 0,
+            "G": 0,
+            "B": 0,
+            "A": {
+              "Value": 1.0
+            },
+            "UsingThemeColor": true
+          },
+          "LineWidth": 1,
+          "BeginOffset": 0,
+          "EndOffset": 0,
+          "CapStyle": "Butt",
+          "DashStyle": "None",
+          "JoinStyle": "Miter",
+          "AsConnector": true,
+          "ShowName": true,
+          "NamePosition": "Begin",
+          "ConnectInfos": [
+            {
+              "Index": 0,
+              "RefUUID": "88e0b526-9518-44a8-aba6-2334a82de8f8"
+            },
+            {
+              "Index": 1,
+              "RefUUID": "767da390-eadd-4c46-b245-4c3e4061a6a2"
+            }
+          ]
+        },
+        "ArrowCommon": {
+          "BeginStyle": "None",
+          "EndStyle": "None"
+        },
+        "ConnectorCommon": {
+          "Type": "Elbow",
+          "VertexMode": "AutoArrange",
+          "StartAxis": "Vertical"
+        },
+        "RelationCommon": {
+          "OldVersion": false,
+          "Visible": true,
+          "RefUUID": "a222126a-480e-471c-8b3f-d2609ed5228c"
+        }
+      }
+    ],
+    "c0220ac2-3e8b-4bba-8369-b5f60fc7a541": [
+      {
+        "_META_": true,
+        "_VERSION_": "",
+        "ObjectName": "upload",
+        "ObjectTypeID": "Table_MYSQL",
+        "ObjectTypeDisplayName": "Table_MYSQL",
+        "ObjectVersion": "17.2.0000",
+        "ResourceUUIDs": [],
+        "ChildObjectUUIDs": []
+      },
+      {
+        "_VERSION_": "17.0.0000",
+        "Fields": [
+          {
+            "Name": "id",
+            "Type": "int",
+            "Length": -2147483648,
+            "Decimals": -2147483648,
+            "IsUnsigned": false,
+            "IsZeroFill": false,
+            "SetEnumValues": "",
+            "IsBinary": false,
+            "Charset": "",
+            "Collation": "",
+            "IsNullable": false,
+            "DefaultType": "None",
+            "DefaultValue": "",
+            "IsOnUpdateCurrentTimestamp": false,
+            "IsAutoInc": true,
+            "Comment": "",
+            "ColumnFormat": "",
+            "Storage": "",
+            "IsVirtual": false,
+            "IsGeneratedAlways": false,
+            "VirtualExpr": "",
+            "VirtualType": ""
+          },
+          {
+            "Name": "user_id",
+            "Type": "varchar",
+            "Length": 255,
+            "Decimals": -2147483648,
+            "IsUnsigned": false,
+            "IsZeroFill": false,
+            "SetEnumValues": "",
+            "IsBinary": false,
+            "Charset": "utf8mb3",
+            "Collation": "utf8mb3_general_ci",
+            "IsNullable": false,
+            "DefaultType": "None",
+            "DefaultValue": "",
+            "IsOnUpdateCurrentTimestamp": false,
+            "IsAutoInc": false,
+            "Comment": "",
+            "ColumnFormat": "",
+            "Storage": "",
+            "IsVirtual": false,
+            "IsGeneratedAlways": false,
+            "VirtualExpr": "",
+            "VirtualType": ""
+          },
+          {
+            "Name": "level",
+            "Type": "int",
+            "Length": -2147483648,
+            "Decimals": -2147483648,
+            "IsUnsigned": false,
+            "IsZeroFill": false,
+            "SetEnumValues": "",
+            "IsBinary": false,
+            "Charset": "",
+            "Collation": "",
+            "IsNullable": false,
+            "DefaultType": "Others",
+            "DefaultValue": "0",
+            "IsOnUpdateCurrentTimestamp": false,
+            "IsAutoInc": false,
+            "Comment": "",
+            "ColumnFormat": "",
+            "Storage": "",
+            "IsVirtual": false,
+            "IsGeneratedAlways": false,
+            "VirtualExpr": "",
+            "VirtualType": ""
+          },
+          {
+            "Name": "url",
+            "Type": "varchar",
+            "Length": 255,
+            "Decimals": -2147483648,
+            "IsUnsigned": false,
+            "IsZeroFill": false,
+            "SetEnumValues": "",
+            "IsBinary": false,
+            "Charset": "utf8mb3",
+            "Collation": "utf8mb3_general_ci",
+            "IsNullable": false,
+            "DefaultType": "None",
+            "DefaultValue": "",
+            "IsOnUpdateCurrentTimestamp": false,
+            "IsAutoInc": false,
+            "Comment": "",
+            "ColumnFormat": "",
+            "Storage": "",
+            "IsVirtual": false,
+            "IsGeneratedAlways": false,
+            "VirtualExpr": "",
+            "VirtualType": ""
+          }
+        ],
+        "PrimaryKey": {
+          "Name": "",
+          "Fields": [
+            {
+              "Name": "id",
+              "KeyLength": 0,
+              "Order": "ASC"
+            }
+          ],
+          "IndexMethod": "BTREE",
+          "Comment": ""
+        },
+        "Engine": "InnoDB",
+        "AutoIncrement": 5,
+        "Tablespace": "",
+        "Storage": "",
+        "Union": "",
+        "CharacterSet": "utf8mb3",
+        "Checksum": false,
+        "Collation": "utf8mb3_general_ci",
+        "Comment": "",
+        "Compression": "",
+        "Connection": "",
+        "DataDirectory": "",
+        "DelayKeyWrite": false,
+        "Encryption": false,
+        "IndexDirectory": "",
+        "InsertMethod": "",
+        "RowFormat": "DYNAMIC",
+        "StatsAutoRecalc": "",
+        "StatsPersistent": "",
+        "StatsSamplePages": 0,
+        "AVGRowLength": 0,
+        "MaxRows": 0,
+        "MinRows": 0,
+        "PackKeys": "",
+        "KeyBlockSize": 0,
+        "PartitionBy": "",
+        "PartitionByExpr": "",
+        "Partitions": 0,
+        "SubPartitionBy": "",
+        "SubPartitionByExpr": "",
+        "SubPartitions": 0,
+        "CreateOptions": "row_format=DYNAMIC",
+        "CreateTime": "2026-04-28 23:14:30",
+        "CheckTime": "",
+        "DataFree": 0,
+        "DataLength": 16384,
+        "IndexLength": 0,
+        "MaxDataLength": 0,
+        "PageCheckSum": false,
+        "Rows": 4,
+        "Transactional": false,
+        "UpdateTime": ""
+      },
+      {
+        "_VERSION_": "17.1.0002"
+      },
+      {
+        "_VERSION_": "17.2.0000",
+        "ModelOption": {
+          "DimensionalRole": "Unknown",
+          "DataVaultComponent": "Unknown"
+        }
+      }
+    ],
+    "561c8629-74dd-4c58-aeef-c2a60219dee2": [
+      {
+        "_META_": true,
+        "_VERSION_": "",
+        "ObjectName": "week",
+        "ObjectTypeID": "Table_MYSQL",
+        "ObjectTypeDisplayName": "Table_MYSQL",
+        "ObjectVersion": "17.2.0000",
+        "ResourceUUIDs": [],
+        "ChildObjectUUIDs": []
+      },
+      {
+        "_VERSION_": "17.0.0000",
+        "Fields": [
+          {
+            "Name": "id",
+            "Type": "int",
+            "Length": -2147483648,
+            "Decimals": -2147483648,
+            "IsUnsigned": false,
+            "IsZeroFill": false,
+            "SetEnumValues": "",
+            "IsBinary": false,
+            "Charset": "",
+            "Collation": "",
+            "IsNullable": false,
+            "DefaultType": "None",
+            "DefaultValue": "",
+            "IsOnUpdateCurrentTimestamp": false,
+            "IsAutoInc": true,
+            "Comment": "",
+            "ColumnFormat": "",
+            "Storage": "",
+            "IsVirtual": false,
+            "IsGeneratedAlways": false,
+            "VirtualExpr": "",
+            "VirtualType": ""
+          },
+          {
+            "Name": "monday",
+            "Type": "varchar",
+            "Length": 50,
+            "Decimals": -2147483648,
+            "IsUnsigned": false,
+            "IsZeroFill": false,
+            "SetEnumValues": "",
+            "IsBinary": false,
+            "Charset": "utf8mb3",
+            "Collation": "utf8mb3_general_ci",
+            "IsNullable": true,
+            "DefaultType": "Null",
+            "DefaultValue": "",
+            "IsOnUpdateCurrentTimestamp": false,
+            "IsAutoInc": false,
+            "Comment": "",
+            "ColumnFormat": "",
+            "Storage": "",
+            "IsVirtual": false,
+            "IsGeneratedAlways": false,
+            "VirtualExpr": "",
+            "VirtualType": ""
+          },
+          {
+            "Name": "tuesday",
+            "Type": "varchar",
+            "Length": 50,
+            "Decimals": -2147483648,
+            "IsUnsigned": false,
+            "IsZeroFill": false,
+            "SetEnumValues": "",
+            "IsBinary": false,
+            "Charset": "utf8mb3",
+            "Collation": "utf8mb3_general_ci",
+            "IsNullable": true,
+            "DefaultType": "Null",
+            "DefaultValue": "",
+            "IsOnUpdateCurrentTimestamp": false,
+            "IsAutoInc": false,
+            "Comment": "",
+            "ColumnFormat": "",
+            "Storage": "",
+            "IsVirtual": false,
+            "IsGeneratedAlways": false,
+            "VirtualExpr": "",
+            "VirtualType": ""
+          },
+          {
+            "Name": "wednesday",
+            "Type": "varchar",
+            "Length": 50,
+            "Decimals": -2147483648,
+            "IsUnsigned": false,
+            "IsZeroFill": false,
+            "SetEnumValues": "",
+            "IsBinary": false,
+            "Charset": "utf8mb3",
+            "Collation": "utf8mb3_general_ci",
+            "IsNullable": true,
+            "DefaultType": "Null",
+            "DefaultValue": "",
+            "IsOnUpdateCurrentTimestamp": false,
+            "IsAutoInc": false,
+            "Comment": "",
+            "ColumnFormat": "",
+            "Storage": "",
+            "IsVirtual": false,
+            "IsGeneratedAlways": false,
+            "VirtualExpr": "",
+            "VirtualType": ""
+          },
+          {
+            "Name": "thursday",
+            "Type": "varchar",
+            "Length": 50,
+            "Decimals": -2147483648,
+            "IsUnsigned": false,
+            "IsZeroFill": false,
+            "SetEnumValues": "",
+            "IsBinary": false,
+            "Charset": "utf8mb3",
+            "Collation": "utf8mb3_general_ci",
+            "IsNullable": true,
+            "DefaultType": "Null",
+            "DefaultValue": "",
+            "IsOnUpdateCurrentTimestamp": false,
+            "IsAutoInc": false,
+            "Comment": "",
+            "ColumnFormat": "",
+            "Storage": "",
+            "IsVirtual": false,
+            "IsGeneratedAlways": false,
+            "VirtualExpr": "",
+            "VirtualType": ""
+          },
+          {
+            "Name": "friday",
+            "Type": "varchar",
+            "Length": 50,
+            "Decimals": -2147483648,
+            "IsUnsigned": false,
+            "IsZeroFill": false,
+            "SetEnumValues": "",
+            "IsBinary": false,
+            "Charset": "utf8mb3",
+            "Collation": "utf8mb3_general_ci",
+            "IsNullable": true,
+            "DefaultType": "Null",
+            "DefaultValue": "",
+            "IsOnUpdateCurrentTimestamp": false,
+            "IsAutoInc": false,
+            "Comment": "",
+            "ColumnFormat": "",
+            "Storage": "",
+            "IsVirtual": false,
+            "IsGeneratedAlways": false,
+            "VirtualExpr": "",
+            "VirtualType": ""
+          },
+          {
+            "Name": "saturday",
+            "Type": "varchar",
+            "Length": 50,
+            "Decimals": -2147483648,
+            "IsUnsigned": false,
+            "IsZeroFill": false,
+            "SetEnumValues": "",
+            "IsBinary": false,
+            "Charset": "utf8mb3",
+            "Collation": "utf8mb3_general_ci",
+            "IsNullable": true,
+            "DefaultType": "Null",
+            "DefaultValue": "",
+            "IsOnUpdateCurrentTimestamp": false,
+            "IsAutoInc": false,
+            "Comment": "",
+            "ColumnFormat": "",
+            "Storage": "",
+            "IsVirtual": false,
+            "IsGeneratedAlways": false,
+            "VirtualExpr": "",
+            "VirtualType": ""
+          },
+          {
+            "Name": "sunday",
+            "Type": "varchar",
+            "Length": 50,
+            "Decimals": -2147483648,
+            "IsUnsigned": false,
+            "IsZeroFill": false,
+            "SetEnumValues": "",
+            "IsBinary": false,
+            "Charset": "utf8mb3",
+            "Collation": "utf8mb3_general_ci",
+            "IsNullable": true,
+            "DefaultType": "Null",
+            "DefaultValue": "",
+            "IsOnUpdateCurrentTimestamp": false,
+            "IsAutoInc": false,
+            "Comment": "",
+            "ColumnFormat": "",
+            "Storage": "",
+            "IsVirtual": false,
+            "IsGeneratedAlways": false,
+            "VirtualExpr": "",
+            "VirtualType": ""
+          }
+        ],
+        "PrimaryKey": {
+          "Name": "",
+          "Fields": [
+            {
+              "Name": "id",
+              "KeyLength": 0,
+              "Order": "ASC"
+            }
+          ],
+          "IndexMethod": "BTREE",
+          "Comment": ""
+        },
+        "Engine": "InnoDB",
+        "AutoIncrement": 41,
+        "Tablespace": "",
+        "Storage": "",
+        "Union": "",
+        "CharacterSet": "utf8mb3",
+        "Checksum": false,
+        "Collation": "utf8mb3_general_ci",
+        "Comment": "",
+        "Compression": "",
+        "Connection": "",
+        "DataDirectory": "",
+        "DelayKeyWrite": false,
+        "Encryption": false,
+        "IndexDirectory": "",
+        "InsertMethod": "",
+        "RowFormat": "DYNAMIC",
+        "StatsAutoRecalc": "",
+        "StatsPersistent": "",
+        "StatsSamplePages": 0,
+        "AVGRowLength": 0,
+        "MaxRows": 0,
+        "MinRows": 0,
+        "PackKeys": "",
+        "KeyBlockSize": 0,
+        "PartitionBy": "",
+        "PartitionByExpr": "",
+        "Partitions": 0,
+        "SubPartitionBy": "",
+        "SubPartitionByExpr": "",
+        "SubPartitions": 0,
+        "CreateOptions": "row_format=DYNAMIC",
+        "CreateTime": "2026-04-28 23:14:30",
+        "CheckTime": "",
+        "DataFree": 0,
+        "DataLength": 16384,
+        "IndexLength": 0,
+        "MaxDataLength": 0,
+        "PageCheckSum": false,
+        "Rows": 40,
+        "Transactional": false,
+        "UpdateTime": ""
+      },
+      {
+        "_VERSION_": "17.1.0002"
+      },
+      {
+        "_VERSION_": "17.2.0000",
+        "ModelOption": {
+          "DimensionalRole": "Unknown",
+          "DataVaultComponent": "Unknown"
+        }
+      }
+    ],
+    "0bc964ec-db24-4555-8d55-e84705107aae": [
+      {
+        "_META_": true,
+        "_VERSION_": "",
+        "ObjectName": "",
+        "ObjectTypeID": "MVDiagram",
+        "ObjectTypeDisplayName": "MVDiagram",
+        "ObjectVersion": "17.0.0001",
+        "ResourceUUIDs": [],
+        "ChildObjectUUIDs": [
+          "f6e9d505-130c-4b0d-a251-f16fdac7dd00",
+          "7b740862-eb44-4c89-a38d-2e238d230bf8",
+          "2b5631aa-524b-4c7c-bb5d-29499d86898c",
+          "b8e0e3a2-2db3-460e-9610-81666c565fd7",
+          "a3eaaa06-d844-462e-9690-be26b84864b3",
+          "1311b2db-331e-46a3-b1b4-53157fa3f7fa",
+          "9974271e-5905-4428-a29b-d41de9feeab1",
+          "56591cc2-d166-44d8-a03f-f06596d7df7b",
+          "f4ae3a1e-179a-4a83-b2b1-474647420917",
+          "88e0b526-9518-44a8-aba6-2334a82de8f8",
+          "278c2bab-cc91-4166-b939-4adfa97c5790",
+          "f1044ba2-512d-4255-9737-d5c617eaa227",
+          "de7912f5-6467-4485-8828-94ab2a75116a",
+          "767da390-eadd-4c46-b245-4c3e4061a6a2",
+          "757a9fcb-641f-4564-86ee-37d9cec40952"
+        ]
+      },
+      {
+        "_VERSION_": "17.0.0000",
+        "Notation": "Default",
+        "PaperType": "A4_Landscape",
+        "PaperSize": {
+          "Width": 1753,
+          "Height": 1240
+        },
+        "PagesSize": {
+          "Width": 1,
+          "Height": 1
+        },
+        "BlackAndWhite": false,
+        "DatabaseObjectFontName": "Default",
+        "DatabaseObjectFontSize": 14,
+        "ShowDatabaseObjectComments": false,
+        "ShowTableFieldComments": false,
+        "ShowDatabaseName": false,
+        "DiagramObjects": [
+          {
+            "Name": "tc_course",
+            "Rect": {
+              "X": 490,
+              "Y": 740,
+              "Width": 50,
+              "Height": 1
+            },
+            "InProportions": false,
+            "IsLocked": false,
+            "RefUUID": "f6e9d505-130c-4b0d-a251-f16fdac7dd00"
+          },
+          {
+            "Name": "sc_course",
+            "Rect": {
+              "X": 390,
+              "Y": 600,
+              "Width": 1,
+              "Height": 20
+            },
+            "InProportions": false,
+            "IsLocked": false,
+            "RefUUID": "7b740862-eb44-4c89-a38d-2e238d230bf8"
+          },
+          {
+            "Name": "sc_student",
+            "Rect": {
+              "X": 390,
+              "Y": 340,
+              "Width": 1,
+              "Height": 40
+            },
+            "InProportions": false,
+            "IsLocked": false,
+            "RefUUID": "2b5631aa-524b-4c7c-bb5d-29499d86898c"
+          },
+          {
+            "Name": "ci_course",
+            "Rect": {
+              "X": 240,
+              "Y": 740,
+              "Width": 50,
+              "Height": 1
+            },
+            "InProportions": false,
+            "IsLocked": false,
+            "RefUUID": "b8e0e3a2-2db3-460e-9610-81666c565fd7"
+          },
+          {
+            "Name": "week",
+            "Rect": {
+              "X": 1100,
+              "Y": 40,
+              "Width": 200,
+              "Height": 200
+            },
+            "InProportions": false,
+            "IsLocked": false,
+            "RefUUID": "a3eaaa06-d844-462e-9690-be26b84864b3"
+          },
+          {
+            "Name": "upload",
+            "Rect": {
+              "X": 880,
+              "Y": 920,
+              "Width": 200,
+              "Height": 200
+            },
+            "InProportions": false,
+            "IsLocked": false,
+            "RefUUID": "1311b2db-331e-46a3-b1b4-53157fa3f7fa"
+          },
+          {
+            "Name": "timetable",
+            "Rect": {
+              "X": 600,
+              "Y": 920,
+              "Width": 200,
+              "Height": 200
+            },
+            "InProportions": false,
+            "IsLocked": false,
+            "RefUUID": "9974271e-5905-4428-a29b-d41de9feeab1"
+          },
+          {
+            "Name": "teacher_course",
+            "Rect": {
+              "X": 540,
+              "Y": 640,
+              "Width": 200,
+              "Height": 200
+            },
+            "InProportions": false,
+            "IsLocked": false,
+            "RefUUID": "56591cc2-d166-44d8-a03f-f06596d7df7b"
+          },
+          {
+            "Name": "teacher",
+            "Rect": {
+              "X": 40,
+              "Y": 920,
+              "Width": 200,
+              "Height": 240
+            },
+            "InProportions": false,
+            "IsLocked": false,
+            "RefUUID": "f4ae3a1e-179a-4a83-b2b1-474647420917"
+          },
+          {
+            "Name": "student_course",
+            "Rect": {
+              "X": 290,
+              "Y": 380,
+              "Width": 200,
+              "Height": 220
+            },
+            "InProportions": false,
+            "IsLocked": false,
+            "RefUUID": "88e0b526-9518-44a8-aba6-2334a82de8f8"
+          },
+          {
+            "Name": "student",
+            "Rect": {
+              "X": 280,
+              "Y": 40,
+              "Width": 220,
+              "Height": 300
+            },
+            "InProportions": false,
+            "IsLocked": false,
+            "RefUUID": "278c2bab-cc91-4166-b939-4adfa97c5790"
+          },
+          {
+            "Name": "profession",
+            "Rect": {
+              "X": 320,
+              "Y": 920,
+              "Width": 200,
+              "Height": 200
+            },
+            "InProportions": false,
+            "IsLocked": false,
+            "RefUUID": "f1044ba2-512d-4255-9737-d5c617eaa227"
+          },
+          {
+            "Name": "course_info",
+            "Rect": {
+              "X": 40,
+              "Y": 640,
+              "Width": 200,
+              "Height": 200
+            },
+            "InProportions": false,
+            "IsLocked": false,
+            "RefUUID": "de7912f5-6467-4485-8828-94ab2a75116a"
+          },
+          {
+            "Name": "course",
+            "Rect": {
+              "X": 290,
+              "Y": 620,
+              "Width": 200,
+              "Height": 240
+            },
+            "InProportions": false,
+            "IsLocked": false,
+            "RefUUID": "767da390-eadd-4c46-b245-4c3e4061a6a2"
+          },
+          {
+            "Name": "admin",
+            "Rect": {
+              "X": 820,
+              "Y": 40,
+              "Width": 200,
+              "Height": 240
+            },
+            "InProportions": false,
+            "IsLocked": false,
+            "RefUUID": "757a9fcb-641f-4564-86ee-37d9cec40952"
+          }
+        ]
+      },
+      {
+        "_VERSION_": "17.0.0001",
+        "ShowTableFieldNotNull": false,
+        "ShowTableSubfields": true
+      }
+    ],
+    "2b5631aa-524b-4c7c-bb5d-29499d86898c": [
+      {
+        "_META_": true,
+        "_VERSION_": "",
+        "ObjectName": "sc_student",
+        "ObjectTypeID": "MVDiagramShape_Relation",
+        "ObjectTypeDisplayName": "MVDiagramShape_Relation",
+        "ObjectVersion": "17.0.0000",
+        "ResourceUUIDs": [],
+        "ChildObjectUUIDs": []
+      },
+      {
+        "_VERSION_": "17.0.0000",
+        "LineCommon": {
+          "Vertices": [
+            {
+              "X": 0,
+              "Y": 40
+            },
+            {
+              "X": 0,
+              "Y": 0
+            }
+          ],
+          "Color": {
+            "R": 0,
+            "G": 0,
+            "B": 0,
+            "A": {
+              "Value": 1.0
+            },
+            "UsingThemeColor": true
+          },
+          "LineWidth": 1,
+          "BeginOffset": 0,
+          "EndOffset": 0,
+          "CapStyle": "Butt",
+          "DashStyle": "None",
+          "JoinStyle": "Miter",
+          "AsConnector": true,
+          "ShowName": true,
+          "NamePosition": "Begin",
+          "ConnectInfos": [
+            {
+              "Index": 0,
+              "RefUUID": "88e0b526-9518-44a8-aba6-2334a82de8f8"
+            },
+            {
+              "Index": 1,
+              "RefUUID": "278c2bab-cc91-4166-b939-4adfa97c5790"
+            }
+          ]
+        },
+        "ArrowCommon": {
+          "BeginStyle": "None",
+          "EndStyle": "None"
+        },
+        "ConnectorCommon": {
+          "Type": "Elbow",
+          "VertexMode": "AutoArrange",
+          "StartAxis": "Vertical"
+        },
+        "RelationCommon": {
+          "OldVersion": false,
+          "Visible": true,
+          "RefUUID": "a222126a-480e-471c-8b3f-d2609ed5228c"
+        }
+      }
+    ],
+    "b8e0e3a2-2db3-460e-9610-81666c565fd7": [
+      {
+        "_META_": true,
+        "_VERSION_": "",
+        "ObjectName": "ci_course",
+        "ObjectTypeID": "MVDiagramShape_Relation",
+        "ObjectTypeDisplayName": "MVDiagramShape_Relation",
+        "ObjectVersion": "17.0.0000",
+        "ResourceUUIDs": [],
+        "ChildObjectUUIDs": []
+      },
+      {
+        "_VERSION_": "17.0.0000",
+        "LineCommon": {
+          "Vertices": [
+            {
+              "X": 0,
+              "Y": 0
+            },
+            {
+              "X": 50,
+              "Y": 0
+            }
+          ],
+          "Color": {
+            "R": 0,
+            "G": 0,
+            "B": 0,
+            "A": {
+              "Value": 1.0
+            },
+            "UsingThemeColor": true
+          },
+          "LineWidth": 1,
+          "BeginOffset": 0,
+          "EndOffset": 0,
+          "CapStyle": "Butt",
+          "DashStyle": "None",
+          "JoinStyle": "Miter",
+          "AsConnector": true,
+          "ShowName": true,
+          "NamePosition": "Begin",
+          "ConnectInfos": [
+            {
+              "Index": 0,
+              "RefUUID": "de7912f5-6467-4485-8828-94ab2a75116a"
+            },
+            {
+              "Index": 1,
+              "RefUUID": "767da390-eadd-4c46-b245-4c3e4061a6a2"
+            }
+          ]
+        },
+        "ArrowCommon": {
+          "BeginStyle": "None",
+          "EndStyle": "None"
+        },
+        "ConnectorCommon": {
+          "Type": "Elbow",
+          "VertexMode": "AutoArrange",
+          "StartAxis": "Horizontal"
+        },
+        "RelationCommon": {
+          "OldVersion": false,
+          "Visible": true,
+          "RefUUID": "39af7674-4209-4ff8-aab6-4a96fe543665"
+        }
+      }
+    ],
+    "a3eaaa06-d844-462e-9690-be26b84864b3": [
+      {
+        "_META_": true,
+        "_VERSION_": "",
+        "ObjectName": "week",
+        "ObjectTypeID": "MVDiagramModelObject_Table",
+        "ObjectTypeDisplayName": "MVDiagramModelObject_Table",
+        "ObjectVersion": "17.0.0001",
+        "ResourceUUIDs": [],
+        "ChildObjectUUIDs": []
+      },
+      {
+        "_VERSION_": "17.0.0000",
+        "RefUUID": "561c8629-74dd-4c58-aeef-c2a60219dee2",
+        "DisplayMode": "Auto",
+        "Color": {
+          "R": 55,
+          "G": 131,
+          "B": 192,
+          "A": {
+            "Value": 1.0
+          }
+        },
+        "IsBold": false
+      },
+      {
+        "_VERSION_": "17.0.0001",
+        "RefUUID": "561c8629-74dd-4c58-aeef-c2a60219dee2",
+        "DisplayMode": "Auto",
+        "ThemeColor": {
+          "R": 55,
+          "G": 131,
+          "B": 192,
+          "A": {
+            "Value": 1.0
+          },
+          "UsingThemeColor": false
+        },
+        "IsBold": false
+      }
+    ],
+    "1311b2db-331e-46a3-b1b4-53157fa3f7fa": [
+      {
+        "_META_": true,
+        "_VERSION_": "",
+        "ObjectName": "upload",
+        "ObjectTypeID": "MVDiagramModelObject_Table",
+        "ObjectTypeDisplayName": "MVDiagramModelObject_Table",
+        "ObjectVersion": "17.0.0001",
+        "ResourceUUIDs": [],
+        "ChildObjectUUIDs": []
+      },
+      {
+        "_VERSION_": "17.0.0000",
+        "RefUUID": "c0220ac2-3e8b-4bba-8369-b5f60fc7a541",
+        "DisplayMode": "Auto",
+        "Color": {
+          "R": 55,
+          "G": 131,
+          "B": 192,
+          "A": {
+            "Value": 1.0
+          }
+        },
+        "IsBold": false
+      },
+      {
+        "_VERSION_": "17.0.0001",
+        "RefUUID": "c0220ac2-3e8b-4bba-8369-b5f60fc7a541",
+        "DisplayMode": "Auto",
+        "ThemeColor": {
+          "R": 55,
+          "G": 131,
+          "B": 192,
+          "A": {
+            "Value": 1.0
+          },
+          "UsingThemeColor": false
+        },
+        "IsBold": false
+      }
+    ],
+    "9974271e-5905-4428-a29b-d41de9feeab1": [
+      {
+        "_META_": true,
+        "_VERSION_": "",
+        "ObjectName": "timetable",
+        "ObjectTypeID": "MVDiagramModelObject_Table",
+        "ObjectTypeDisplayName": "MVDiagramModelObject_Table",
+        "ObjectVersion": "17.0.0001",
+        "ResourceUUIDs": [],
+        "ChildObjectUUIDs": []
+      },
+      {
+        "_VERSION_": "17.0.0000",
+        "RefUUID": "17604b0c-e2bc-4153-8bbd-fa1e80f5f7df",
+        "DisplayMode": "Auto",
+        "Color": {
+          "R": 55,
+          "G": 131,
+          "B": 192,
+          "A": {
+            "Value": 1.0
+          }
+        },
+        "IsBold": false
+      },
+      {
+        "_VERSION_": "17.0.0001",
+        "RefUUID": "17604b0c-e2bc-4153-8bbd-fa1e80f5f7df",
+        "DisplayMode": "Auto",
+        "ThemeColor": {
+          "R": 55,
+          "G": 131,
+          "B": 192,
+          "A": {
+            "Value": 1.0
+          },
+          "UsingThemeColor": false
+        },
+        "IsBold": false
+      }
+    ],
+    "56591cc2-d166-44d8-a03f-f06596d7df7b": [
+      {
+        "_META_": true,
+        "_VERSION_": "",
+        "ObjectName": "teacher_course",
+        "ObjectTypeID": "MVDiagramModelObject_Table",
+        "ObjectTypeDisplayName": "MVDiagramModelObject_Table",
+        "ObjectVersion": "17.0.0001",
+        "ResourceUUIDs": [],
+        "ChildObjectUUIDs": []
+      },
+      {
+        "_VERSION_": "17.0.0000",
+        "RefUUID": "27899ce6-052e-442c-a504-bebe1dba5c03",
+        "DisplayMode": "Auto",
+        "Color": {
+          "R": 55,
+          "G": 131,
+          "B": 192,
+          "A": {
+            "Value": 1.0
+          }
+        },
+        "IsBold": false
+      },
+      {
+        "_VERSION_": "17.0.0001",
+        "RefUUID": "27899ce6-052e-442c-a504-bebe1dba5c03",
+        "DisplayMode": "Auto",
+        "ThemeColor": {
+          "R": 55,
+          "G": 131,
+          "B": 192,
+          "A": {
+            "Value": 1.0
+          },
+          "UsingThemeColor": false
+        },
+        "IsBold": false
+      }
+    ],
+    "f4ae3a1e-179a-4a83-b2b1-474647420917": [
+      {
+        "_META_": true,
+        "_VERSION_": "",
+        "ObjectName": "teacher",
+        "ObjectTypeID": "MVDiagramModelObject_Table",
+        "ObjectTypeDisplayName": "MVDiagramModelObject_Table",
+        "ObjectVersion": "17.0.0001",
+        "ResourceUUIDs": [],
+        "ChildObjectUUIDs": []
+      },
+      {
+        "_VERSION_": "17.0.0000",
+        "RefUUID": "b500fdc0-f7dd-49b4-a27f-c6e13f692cde",
+        "DisplayMode": "Auto",
+        "Color": {
+          "R": 55,
+          "G": 131,
+          "B": 192,
+          "A": {
+            "Value": 1.0
+          }
+        },
+        "IsBold": false
+      },
+      {
+        "_VERSION_": "17.0.0001",
+        "RefUUID": "b500fdc0-f7dd-49b4-a27f-c6e13f692cde",
+        "DisplayMode": "Auto",
+        "ThemeColor": {
+          "R": 55,
+          "G": 131,
+          "B": 192,
+          "A": {
+            "Value": 1.0
+          },
+          "UsingThemeColor": false
+        },
+        "IsBold": false
+      }
+    ],
+    "88e0b526-9518-44a8-aba6-2334a82de8f8": [
+      {
+        "_META_": true,
+        "_VERSION_": "",
+        "ObjectName": "student_course",
+        "ObjectTypeID": "MVDiagramModelObject_Table",
+        "ObjectTypeDisplayName": "MVDiagramModelObject_Table",
+        "ObjectVersion": "17.0.0001",
+        "ResourceUUIDs": [],
+        "ChildObjectUUIDs": []
+      },
+      {
+        "_VERSION_": "17.0.0000",
+        "RefUUID": "a222126a-480e-471c-8b3f-d2609ed5228c",
+        "DisplayMode": "Auto",
+        "Color": {
+          "R": 55,
+          "G": 131,
+          "B": 192,
+          "A": {
+            "Value": 1.0
+          }
+        },
+        "IsBold": false
+      },
+      {
+        "_VERSION_": "17.0.0001",
+        "RefUUID": "a222126a-480e-471c-8b3f-d2609ed5228c",
+        "DisplayMode": "Auto",
+        "ThemeColor": {
+          "R": 55,
+          "G": 131,
+          "B": 192,
+          "A": {
+            "Value": 1.0
+          },
+          "UsingThemeColor": false
+        },
+        "IsBold": false
+      }
+    ],
+    "278c2bab-cc91-4166-b939-4adfa97c5790": [
+      {
+        "_META_": true,
+        "_VERSION_": "",
+        "ObjectName": "student",
+        "ObjectTypeID": "MVDiagramModelObject_Table",
+        "ObjectTypeDisplayName": "MVDiagramModelObject_Table",
+        "ObjectVersion": "17.0.0001",
+        "ResourceUUIDs": [],
+        "ChildObjectUUIDs": []
+      },
+      {
+        "_VERSION_": "17.0.0000",
+        "RefUUID": "5408e03d-f51e-4ab6-a49e-8ad7aa746815",
+        "DisplayMode": "Auto",
+        "Color": {
+          "R": 55,
+          "G": 131,
+          "B": 192,
+          "A": {
+            "Value": 1.0
+          }
+        },
+        "IsBold": false
+      },
+      {
+        "_VERSION_": "17.0.0001",
+        "RefUUID": "5408e03d-f51e-4ab6-a49e-8ad7aa746815",
+        "DisplayMode": "Auto",
+        "ThemeColor": {
+          "R": 55,
+          "G": 131,
+          "B": 192,
+          "A": {
+            "Value": 1.0
+          },
+          "UsingThemeColor": false
+        },
+        "IsBold": false
+      }
+    ],
+    "f1044ba2-512d-4255-9737-d5c617eaa227": [
+      {
+        "_META_": true,
+        "_VERSION_": "",
+        "ObjectName": "profession",
+        "ObjectTypeID": "MVDiagramModelObject_Table",
+        "ObjectTypeDisplayName": "MVDiagramModelObject_Table",
+        "ObjectVersion": "17.0.0001",
+        "ResourceUUIDs": [],
+        "ChildObjectUUIDs": []
+      },
+      {
+        "_VERSION_": "17.0.0000",
+        "RefUUID": "9821a05d-1720-4832-9375-b8b53eb538e2",
+        "DisplayMode": "Auto",
+        "Color": {
+          "R": 55,
+          "G": 131,
+          "B": 192,
+          "A": {
+            "Value": 1.0
+          }
+        },
+        "IsBold": false
+      },
+      {
+        "_VERSION_": "17.0.0001",
+        "RefUUID": "9821a05d-1720-4832-9375-b8b53eb538e2",
+        "DisplayMode": "Auto",
+        "ThemeColor": {
+          "R": 55,
+          "G": 131,
+          "B": 192,
+          "A": {
+            "Value": 1.0
+          },
+          "UsingThemeColor": false
+        },
+        "IsBold": false
+      }
+    ],
+    "de7912f5-6467-4485-8828-94ab2a75116a": [
+      {
+        "_META_": true,
+        "_VERSION_": "",
+        "ObjectName": "course_info",
+        "ObjectTypeID": "MVDiagramModelObject_Table",
+        "ObjectTypeDisplayName": "MVDiagramModelObject_Table",
+        "ObjectVersion": "17.0.0001",
+        "ResourceUUIDs": [],
+        "ChildObjectUUIDs": []
+      },
+      {
+        "_VERSION_": "17.0.0000",
+        "RefUUID": "39af7674-4209-4ff8-aab6-4a96fe543665",
+        "DisplayMode": "Auto",
+        "Color": {
+          "R": 55,
+          "G": 131,
+          "B": 192,
+          "A": {
+            "Value": 1.0
+          }
+        },
+        "IsBold": false
+      },
+      {
+        "_VERSION_": "17.0.0001",
+        "RefUUID": "39af7674-4209-4ff8-aab6-4a96fe543665",
+        "DisplayMode": "Auto",
+        "ThemeColor": {
+          "R": 55,
+          "G": 131,
+          "B": 192,
+          "A": {
+            "Value": 1.0
+          },
+          "UsingThemeColor": false
+        },
+        "IsBold": false
+      }
+    ],
+    "767da390-eadd-4c46-b245-4c3e4061a6a2": [
+      {
+        "_META_": true,
+        "_VERSION_": "",
+        "ObjectName": "course",
+        "ObjectTypeID": "MVDiagramModelObject_Table",
+        "ObjectTypeDisplayName": "MVDiagramModelObject_Table",
+        "ObjectVersion": "17.0.0001",
+        "ResourceUUIDs": [],
+        "ChildObjectUUIDs": []
+      },
+      {
+        "_VERSION_": "17.0.0000",
+        "RefUUID": "73ca0567-4893-4f73-b3fa-4dc44124a69c",
+        "DisplayMode": "Auto",
+        "Color": {
+          "R": 55,
+          "G": 131,
+          "B": 192,
+          "A": {
+            "Value": 1.0
+          }
+        },
+        "IsBold": false
+      },
+      {
+        "_VERSION_": "17.0.0001",
+        "RefUUID": "73ca0567-4893-4f73-b3fa-4dc44124a69c",
+        "DisplayMode": "Auto",
+        "ThemeColor": {
+          "R": 55,
+          "G": 131,
+          "B": 192,
+          "A": {
+            "Value": 1.0
+          },
+          "UsingThemeColor": false
+        },
+        "IsBold": false
+      }
+    ],
+    "757a9fcb-641f-4564-86ee-37d9cec40952": [
+      {
+        "_META_": true,
+        "_VERSION_": "",
+        "ObjectName": "admin",
+        "ObjectTypeID": "MVDiagramModelObject_Table",
+        "ObjectTypeDisplayName": "MVDiagramModelObject_Table",
+        "ObjectVersion": "17.0.0001",
+        "ResourceUUIDs": [],
+        "ChildObjectUUIDs": []
+      },
+      {
+        "_VERSION_": "17.0.0000",
+        "RefUUID": "26f62391-7a85-4930-8335-59e1375b0acf",
+        "DisplayMode": "Auto",
+        "Color": {
+          "R": 55,
+          "G": 131,
+          "B": 192,
+          "A": {
+            "Value": 1.0
+          }
+        },
+        "IsBold": false
+      },
+      {
+        "_VERSION_": "17.0.0001",
+        "RefUUID": "26f62391-7a85-4930-8335-59e1375b0acf",
+        "DisplayMode": "Auto",
+        "ThemeColor": {
+          "R": 55,
+          "G": 131,
+          "B": 192,
+          "A": {
+            "Value": 1.0
+          },
+          "UsingThemeColor": false
+        },
+        "IsBold": false
+      }
+    ]
+  },
+  "ResourcesData": {}
+}
