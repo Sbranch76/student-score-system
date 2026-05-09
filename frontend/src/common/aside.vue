@@ -18,6 +18,10 @@
         <span slot="title">课程信息管理</span>
       </el-menu-item>
 
+      <el-menu-item index="timetable" :class="{active: $route.name === '课程表'}">
+        <i class="iconfont icon-r-paper" style="font-size: 26px;"></i> 课程表管理
+      </el-menu-item>
+
       <el-menu-item index="score" :class="{active: $route.name === '成绩信息管理'}">
         <i class="iconfont icon-r-yes" style="font-size: 24px;"></i>
         <span slot="title"> 成绩信息管理</span>
