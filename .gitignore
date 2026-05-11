@@ -1,0 +1,5 @@
+# Postman 相关文件
+.postman/
+postman/
+*.postman_collection.json
+*.postman_environment.json

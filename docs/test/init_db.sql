@@ -77,4 +77,63 @@ CREATE TABLE `student`  (
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE = InnoDB CHARACTER SET = utf8mb3 COLLATE = utf8mb3_general_ci ROW_FORMAT = DYNAMIC;
 
+-- 重建 teacher 表
+CREATE TABLE `teacher` (
+  `id` varchar(50) NOT NULL,
+  `username` varchar(50) NOT NULL DEFAULT '',
+  `password` varchar(255) NOT NULL DEFAULT '',
+  `real_name` varchar(50) NOT NULL DEFAULT '',
+  `level` tinyint NOT NULL DEFAULT 1,
+  `school` varchar(50) NOT NULL DEFAULT '',
+  `email` varchar(50) NOT NULL DEFAULT '0',
+  `phone` varchar(50) NOT NULL DEFAULT '',
+  `sex` tinyint NOT NULL DEFAULT 0,
+  `create_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+
+-- 重建 student_course 成绩表
+CREATE TABLE `student_course` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `student_id` varchar(50) NOT NULL,
+  `course_id` varchar(50) NOT NULL,
+  `name` varchar(50) DEFAULT NULL,
+  `score` int DEFAULT NULL,
+  `point` decimal(3,1) DEFAULT NULL,
+  `credits` decimal(4,1) DEFAULT NULL,
+  `term` tinyint DEFAULT NULL,
+  `year` int DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `sc_student` (`student_id`),
+  KEY `sc_course` (`course_id`),
+  CONSTRAINT `sc_student` FOREIGN KEY (`student_id`) REFERENCES `student` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `sc_course` FOREIGN KEY (`course_id`) REFERENCES `course` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+
+-- 重建 teacher_course 授课表
+CREATE TABLE `teacher_course` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `teacher_id` varchar(50) NOT NULL,
+  `username` varchar(50) DEFAULT NULL,
+  `name` varchar(50) DEFAULT NULL,
+  `profession` varchar(50) DEFAULT NULL,
+  `grade` int DEFAULT NULL,
+  `term` tinyint DEFAULT NULL,
+  `course_id` varchar(50) NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `tc_teacher` (`teacher_id`),
+  KEY `tc_course` (`course_id`),
+  CONSTRAINT `tc_teacher` FOREIGN KEY (`teacher_id`) REFERENCES `teacher` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `tc_course` FOREIGN KEY (`course_id`) REFERENCES `course` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+
+-- 重建 upload 上传表
+CREATE TABLE `upload` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `user_id` varchar(50) NOT NULL,
+  `level` tinyint NOT NULL,
+  `url` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+
 SET FOREIGN_KEY_CHECKS = 1;

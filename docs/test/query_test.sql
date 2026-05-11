@@ -1,4 +1,5 @@
 /* 学生成绩管理系统-数据验证查询脚本 */
+
 -- 1. 查询所有专业
 SELECT * FROM profession;
 
@@ -20,3 +21,9 @@ WHERE ci.room IS NOT NULL;
 
 -- 5. 验证管理员账号
 SELECT username, real_name, school FROM admin WHERE id = 1;
+
+-- 6. 验证学生成绩是否正常
+SELECT s.real_name 学生姓名, c.name 课程名, sc.score 成绩
+FROM student_course sc
+JOIN student s ON sc.student_id = s.id
+JOIN course c ON sc.course_id = c.id;
