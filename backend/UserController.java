@@ -15,12 +15,6 @@ import java.util.List;
 import java.util.Map;
 
 
-/**
- * 用户相关 控制层
- *
- * @author: ShanZhu
- * @date: 2024-01-08
- */
 @RestController
 @UserLoginToken
 @RequestMapping("/api/sms/user")
@@ -28,7 +22,7 @@ public class UserController {
 
     @Resource
     private UserService userService;
-
+// 1. 登录接口
     @GetMapping("/login")
     @PassToken
     public User getStudentInfo(@RequestParam Map<String, Object> condition) {
@@ -41,12 +35,12 @@ public class UserController {
             return null;
         }
         String token = userService.getToken(user, 24 * 60 * 60 * 1000);
-        String refreshToken = userService.getToken(user, 24 * 60 * 60 * 1000); // 有效期一天
+        String refreshToken = userService.getToken(user,7* 24 * 60 * 60 * 1000); // 有效期7天
         user.setToken(token);
         user.setRefreshToken(refreshToken);
         return user;
     }
-
+// 2. 修改密码接口
     @GetMapping("/edit/password")
     public boolean update(@RequestParam Map<String, Object> condition) {
         Map<String, Object> map = new HashMap<>();
@@ -57,7 +51,7 @@ public class UserController {
         map.put("level", condition.get("level").toString());
         return userService.update(map);
     }
-
+// 3. 获取树形结构（专业-班级 树）
     @GetMapping("/getTree")
     public List<Object> getTree() {
         return userService.getTree();
