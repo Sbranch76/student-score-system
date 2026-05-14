@@ -23,7 +23,7 @@ public class ProfessionController {
     private ProfessionService professionService;
 
     @GetMapping("/getProfessionList")
-    private List<Profession> getProfessionList() {
+    public List<Profession> getProfessionList() {
         return professionService.getProfessionList();
     }
 }
