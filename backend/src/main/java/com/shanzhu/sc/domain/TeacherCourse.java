@@ -4,7 +4,8 @@ import lombok.Data;
 
 /**
  * 教师课程任命表实体类
- /
+ *
+ */
 @Data
 public class TeacherCourse {
 
