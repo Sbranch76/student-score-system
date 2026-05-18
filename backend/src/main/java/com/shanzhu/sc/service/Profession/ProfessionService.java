@@ -8,7 +8,7 @@ import java.util.List;
 /**
  * 专业信息 业务服务层
  *
-/
+ */
 public interface ProfessionService {
 
     /**
