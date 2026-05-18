@@ -11,7 +11,7 @@ import java.util.Map;
 /**
  * 分数信息 业务服务层
  *
-/
+ */
 public interface ScoreService {
 
     /**
